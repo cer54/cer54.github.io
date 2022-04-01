@@ -16,12 +16,13 @@ permalink: /gpml/
 Carl Edward Rasmussen and Christopher K. I. Williams<br>
 The MIT Press, 2006. ISBN 0-262-18253-X.
 </center>
+
 <p>
-
 <center>
-<img align="top" border="1" src="rwcover.gif" alt="">
+<img align="top" border="1" src="./rwcover.gif" alt="">
 </center>
-
+</p>
+    
 <p>
 <table width="100%" cellpadding="3" border="0">
 <tr><td align="center" #ffffff>
