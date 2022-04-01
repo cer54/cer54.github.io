@@ -24,17 +24,19 @@ The MIT Press, 2006. ISBN 0-262-18253-X.
 </p>
     
 <p>
-<table width="100%" cellpadding="3" border="0">
-<tr><td align="center" #ffffff>
- [ <a href="chapters">Contents</a>
- | <a href="code">Software</a>
- | <a href="data">Datasets</a>
+  <center>
+    <table width="100%" cellpadding="3" border="0">
+    <tr><td #ffffff>
+    [ <a href="chapters">Contents</a>
+    | <a href="code">Software</a>
+    | <a href="data">Datasets</a>
  | <a href="errata.html">Errata</a> 
  | <a href="authors.html">Authors</a> 
  | <a href="order.html">Order</a> 
  ]
 </td></tr></table>
-</p>
+  </center>
+    </p>
 
 <p> Gaussian processes (GPs) provide a principled, practical, probabilistic
 approach to learning in kernel machines. GPs have received increased attention
