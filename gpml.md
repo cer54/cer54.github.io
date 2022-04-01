@@ -1,3 +1,8 @@
+---
+layout: page
+title: "Gaussian Processes for Machine Learning"
+permalink: /gpml/
+---
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
 <html>
   <head>
