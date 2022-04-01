@@ -60,7 +60,7 @@ and a discussion of Gaussian Markov processes.</p>
 format.</p>
 
 <p>The book was awarded the
-2009 <a href="http://www.bayesian.org/awards/DeGrootPrize.html">DeGroot
+2009 <a href="https://bayesian.org/project/degroot-prize">DeGroot
 Prize</a> of the International Society for Bayesian Analysis.</p>
 
 <hr>
