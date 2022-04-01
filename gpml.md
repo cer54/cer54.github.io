@@ -1,12 +1,10 @@
 ---
 layout: page
-title: "Gaussian Processes for Machine Learning"
+title: "Gaussian Processes for Machine Learning: Book webpage"
 permalink: /gpml/
 ---
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
 <html>
   <head>
-    <title>Gaussian Processes for Machine Learning: Book webpage</title>
     <style type="text/css">
       body {font-family: Verdana,Arial,Helvetica,sans-serif; font-size: 16px}
     </style>
