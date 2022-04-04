@@ -1,3 +1,4 @@
 theme: jekyll-theme-minimal
 title: the Gaussian Process web site
+favicon: gp.ico
 description: This web site aims to provide an overview of resources concerned with probabilistic modeling, inference and learning based on Gaussian processes.
