@@ -472,7 +472,322 @@ from the statistics comunity for the use of a Gaussian process as a prior over
 functions, an idea which was only introduced to the machine learning community
 by <a href="#williams-rasmussen-96">Williams and Rasmussen 1996</a>.
 
-<!--#include file="ref-gpr.html" -->
+
+<p id="boyle-frean-05">
+P.&nbsp;Boyle and M.&nbsp;Frean.
+<a href="http://books.nips.cc/papers/files/nips17/NIPS2004_0225.pdf"><b>Dependent
+  Gaussian processes</b></a>.
+In L.&nbsp;K. Saul, Y.&nbsp;Weiss, and L.&nbsp;Bottou, editors, <em>Advances in Neural
+  Information Processing Systems 17</em>, pages 217-224. The MIT Press,
+  2005.<p class="c"><b> Abstract:</b> Gaussian processes are usually
+  parameterised in terms of their covariance functions. However, this makes it
+  difficult to deal with multiple outputs, because ensuring that the covariance
+  matrix is positive definite is problematic. An alternative formulation is to
+  treat Gaussian processes as white noise sources convolved with smoothing
+  kernels, and to parameterise the kernel instead. Using this, we extend
+  Gaussian processes to handle multiple, coupled outputs.</p>
+
+
+
+</p>
+
+<p id="goldberg-williams-bishop-98">
+P.&nbsp;W. Goldberg, C.&nbsp;K.&nbsp;I. Williams, and C.&nbsp;M. Bishop.
+<a href="http://books.nips.cc/papers/files/nips10/0493.pdf"><b>Regression with
+  input-dependent noise: A Gaussian process treatment</b></a>.
+In M.&nbsp;I. Jordan, M.&nbsp;J. Kearns, and S.&nbsp;A. Solla, editors, <em>Advances in Neural
+  Information Processing Systems 10</em>. The MIT Press, Cambridge, MA,
+  1998.<p class="c"><b> Abstract:</b> Gaussian processes provide natural
+  non-parametric prior distributions over regression functions. In this paper
+  we consider regression problems where there is noise on the output, and the
+  variance of the noise depends on the inputs. If we assume that the noise is a
+  smooth functon of the inputs, then it is natural to model the noise variance
+  using a second Gaussian process, in addition to the Gaussian process
+  governing the noise-free output value. We show that prior uncertainty about
+  the parameters controlling both processes can be handled and that the
+  posterior distribution of the noise rate can be sampled from using Markov
+  chain Monte Carlo methods. Our results on a sythetic data set give a
+  posterior noise variance that well-approximates the true variance.</p>
+
+
+
+</p>
+
+<p id="gramacy-07">
+R.&nbsp;B. Gramacy.
+<a href="http://www.jstatsoft.org/v19/i09/paper"><b>tgp: An R package for
+  Bayesian nonstationary, semiparametric nonlinear regression and design by
+  treed Gaussian process models</b></a>.
+<em>Journal of Statistical Software</em>, 19, 2007.<p class="c"><b>
+  Abstract:</b> The tgp package for R is a tool for fully Bayesian
+  nonstationary, semiparametric nonlinear regression and design by treed
+  Gaussian processes with jumps to the limiting linear model. Special cases
+  also implemented include Bayesian linear models, linear CART, stationary
+  separable and isotropic Gaussian processes. In addition to inference and
+  posterior prediction, the package supports the (sequential) design of
+  experiments under these models paired with several objective criteria. 1-d
+  and 2-d plotting, with higher dimension projection and slice capabilities,
+  and tree drawing functions (requiring maptree and combinat packages), are
+  also provided for visualization of tgp objects.</p>
+
+
+
+</p>
+
+<p id="gramacy-lee-macready-04">
+R.&nbsp;B. Gramacy, Herbert K.&nbsp;H. Lee, and William MacReady.
+<a href="http://whisper.cse.ucsc.edu/~rbgramacy/papers/gra2004-02.pdf"><b>Parameter
+  space exploration with Gaussian process trees</b></a>.
+In <em>21st International Conference on Machine Learning</em>, pages 353-360.
+  Omnipress and ACM Digital Library, 2004.<p class="c"><b> Abstract:</b>
+  Computer experiments often require dense sweeps over input parameters to
+  obtain a qualitative understanding of their response. Such sweeps can be
+  prohibitively expensive, and are unnecessary in regions where the response is
+  easily predicted; well-chosen designs could allow a mapping of the response
+  with far fewer simulation runs. Thus, there is a need for computationally
+  inexpensive surrogate models and an accompanying method for selecting small
+  designs. We explore a general methodology for addressing this need that uses
+  non-stationary Gaussian processes. Binary trees partition the input space to
+  facilitate non-stationarity and a Bayesian interpretation provides an
+  explicit measure of predictive uncertainty that can be used to guide
+  sampling. Our methods are illustrated on several examples, including a
+  motivating example involving computational fluid dynamics simulation of a
+  NASA reentry vehicle.</p>
+
+
+
+</p>
+
+<p id="meeds-osindero-06">
+E.&nbsp;Meeds and S.&nbsp;Osindero.
+<a href="http://books.nips.cc/papers/files/nips18/NIPS2005_0798.pdf"><b>An
+  alternative infinite mixture of Gaussian process experts</b></a>.
+In Y.&nbsp;Weiss, B.&nbsp;Sch&ouml;lkopf, and J.&nbsp;Platt, editors, <em>Advances in Neural
+  Information Processing Systems 18</em>, pages 883-890. The MIT Press,
+  Cambridge, MA, 2006.<p class="c"><b> Abstract:</b> We present an infinite
+  mixture model in which each component comprises a multivariate Gaussian
+  distribution over an input space, and a Gaussian Process model over an output
+  space. Our model is neatly able to deal with non-stationary covariance
+  functions, discontinuities, multimodality and overlapping output signals. The
+  work is similar to that by <a href="#rasmussen-ghahramani-02">Rasmussen and
+  Ghahramani</a>; however, we use a full generative model over input and output
+  space rather than just a conditional model. This allows us to deal with
+  incomplete data, to perform inference over inverse functional mappings as
+  well as for regression, and also leads to a more powerful and consistent
+  Bayesian specification of the effective 'gating network' for the different
+  experts.</p>
+
+
+
+</p>
+
+<p id="ohagan-78">
+A.&nbsp;O'Hagan.
+<b>Curve fitting and optimal design for prediction</b>.
+<em>Journal of the Royal Statistical Society, Series B</em>, 40(1):1-42, 1978.
+
+
+
+</p>
+
+<p id="ohagan-94">
+A.&nbsp;O'Hagan.
+<b>Bayesian Inference</b>, volume&nbsp;2B of <em>Kendall's Advanced Theory of
+  Statistics</em>.
+Arnold, London, 1994.
+chapter 10.48.
+
+
+
+</p>
+
+<p id="plate-99">
+T.&nbsp;Plate.
+<a href="http://www.d-reps.org/tplate/papers/bhmetrika98.ps.gz"><b>Accuracy
+  versus interpretability in flexible modeling: implementing a tradeoff using
+  Gaussian process models</b></a>.
+<em>Behaviourmetrika</em>, 26(1):29-50, 1999.<p class="c"><b> Abstract:</b>
+  One of the widely acknowledged drawbacks of flexible statistical models is
+  that the fitted models are often extremely difficult to interpret. However,
+  if flexible models are constrained to be additive the fitted models are much
+  easier to interpret, as each input can be considered independently. The
+  problem with additive models is that they cannot provide an accurate model if
+  the phenomenon being modeled is not additive. This paper shows that a
+  tradeoff between accuracy and additivity can be implemented easily in
+  Gaussian process models, which are a type of flexible model closely related
+  to feedforward neural networks. One can fit a series of Gaussian process
+  models that begins with the completely flexible and are constrained to be
+  progressively more additive, and thus progressively more interpretable.
+  Observations of how the degree of non-additivity and the test error change as
+  the models become more additive give insight into the importance of
+  interactions in a particular model. Fitted models in the series can also be
+  interpreted graphically with a technique for visualizing the effects of
+  inputs in non-additive models that was adapted from plots for generalized
+  additive models. This visualization technique shows the overall effects of
+  different inputs and also shows which inputs are involved in interactions and
+  how strong those interactions are.</p>
+
+
+
+</p>
+
+<p id="rasmussen-96">
+C.&nbsp;E. Rasmussen.
+<a href="http://www.kyb.mpg.de/publications/pss/ps2304.ps"><b>Evaluation of
+  Gaussian Processes and other Methods for Non-linear Regression</b></a>.
+PhD thesis, Department of Computer Science, University of Toronto, 1996.<p
+  class="c"><b> Abstract:</b> This thesis develops two Bayesian learning
+  methods relying on Gaussian processes and a rigorous statistical approach for
+  evaluating such methods. In these experimental designs the sources of
+  uncertainty in the estimated generalisation performances due to both
+  variation in training and test sets are accounted for. The framework allows
+  for estimation of generalisation performance as well as statistical tests of
+  significance for pairwise comparisons. Two experimental designs are
+  recommended and supported by the DELVE software environment. Two new
+  non-parametric Bayesian learning methods relying on Gaussian process priors
+  over functions are developed. These priors are controlled by hyperparameters
+  which set the characteristic length scale for each input dimension. In the
+  simplest method, these parameters are fit from the data using optimization.
+  In the second, fully Bayesian method, a Markov chain Monte Carlo technique is
+  used to integrate over the hyperparameters. One advantage of these Gaussian
+  process methods is that the priors and hyperparameters of the trained models
+  are easy to interpret. The Gaussian process methods are benchmarked against
+  several other methods, on regression tasks using both real data and data
+  generated from realistic simulations. The experiments show that small
+  datasets are unsuitable for benchmarking purposes because the uncertainties
+  in performance measurements are large. A second set of experiments provide
+  strong evidence that the bagging procedure is advantageous for the
+  Multivariate Adaptive Regression Splines (MARS) method. The simulated
+  datasets have controlled characteristics which make them useful for
+  understanding the relationship between properties of the dataset and the
+  performance of different methods. The dependency of the performance on
+  available computation time is also investigated. It is shown that a Bayesian
+  approach to learning in multi-layer perceptron neural networks achieves
+  better performance than the commonly used early stopping procedure, even for
+  reasonably short amounts of computation time. The Gaussian process methods
+  are shown to consistently outperform the more conventional methods.</p>
+
+
+
+</p>
+
+<p id="rasmussen-ghahramani-02">
+C.&nbsp;E. Rasmussen and Z.&nbsp;Ghahramani.
+<a href="http://books.nips.cc/papers/files/nips14/AA06.pdf"><b>Infinite
+  mixtures of Gaussian process experts</b></a>.
+In T.&nbsp;G. Diettrich, S.&nbsp;Becker, and Z.&nbsp;Ghahramani, editors, <em>Advances in
+  Neural Information Processing Systems 14</em>. The MIT Press, 2002.<p
+  class="c"><b> Abstract:</b> We present an extension to the Mixture of Experts
+  (ME) model, where the individual experts are Gaussian Process (GP) regression
+  models. Using a input-dependent adaptation of the Dirichlet Process, we
+  implement a gating network for an infinite number of Experts. Inference in
+  this model may be done efficiently using a Markov Chain relying on Gibbs
+  sampling. The model allows the effective covariance function to vary with the
+  inputs, and may handle large datasets - thus potentially overcoming two of
+  the biggest hurdles with GP models. Simulations show the viability of this
+  approach.</p>
+
+
+
+</p>
+
+<p id="snelson-rasmussen-ghahramani-04">
+E.&nbsp;Snelson, C.&nbsp;E. Rasmussen, and Z.&nbsp;Ghahramani.
+<a href="http://books.nips.cc/papers/files/nips16/NIPS2003_AA43.pdf"><b>Warped
+  Gaussian processes</b></a>.
+In S.&nbsp;Thrun, L.&nbsp;Saul, and B.&nbsp;Sch&ouml;lkopf, editors, <em>Advances in Neural
+  Information Processing Systems 16</em>, Cambridge, MA, 2004. The MIT
+  Press.<p class="c"><b> Abstract:</b> We generalise the Gaussian process (GP)
+  framework for regression by learning a nonlinear transformation of the GP
+  outputs. This allows for non-Gaussian processes and non-Gaussian noise. The
+  learning algorithm chooses a nonlinear transformation such that transformed
+  data is well-modelled by a GP. This can be seen as including a preprocessing
+  transformation as an integral part of the probabilistic modelling problem,
+  rather than as an ad-hoc step. We demonstrate on several real regression
+  problems that learning the transformation can lead to significantly better
+  performance than using a regular GP, or a GP with a fixed transformation.</p>
+
+
+
+</p>
+
+<p id="sollich-williams-05">
+P.&nbsp;Sollich and C.&nbsp;K.&nbsp;I. Williams.
+<a href="http://books.nips.cc/papers/files/nips17/NIPS2004_0362.pdf"><b>Using
+  the equivalent kernel to understand Gaussian process regression</b></a>.
+In L.&nbsp;K. Saul, Y.&nbsp;Weiss, and L.&nbsp;Bottou, editors, <em>Advances in Neural
+  Information Processing Systems 17</em>. The MIT Press, 2005.<p
+  class="c"><b> Abstract:</b> The equivalent kernel [<a
+  href="#silverman-84">Silverman, 1984</a>] is a way of understanding how
+  Gaussian process regression works for large sample sizes based on a continuum
+  limit. In this paper we show (1) how to approximate the equivalent kernel of
+  the widely-used squared exponential (or Gaussian) kernel and related kernels,
+  and (2) how analysis using the equivalent kernel helps to understand the
+  learning curves for Gaussian processes.</p>
+
+
+
+</p>
+
+<p id="vivarelli-williams-99">
+F.&nbsp;Vivarelli and C.&nbsp;K.&nbsp;I Williams.
+<a href="http://books.nips.cc/papers/files/nips11/0613.pdf"><b>Discovering
+  hidden features with Gaussian processes regression</b></a>.
+In M.&nbsp;S. Kearns, S.&nbsp;A. Solla, and D.&nbsp;A. Cohn, editors, <em>Advances in Neural
+  Information Processing Systems 11</em>. The MIT Press, 1999.<p
+  class="c"><b> Abstract:</b> In Gaussian process regression the covariance
+  between the outputs at input locations x and x' is usually assumed to depend
+  on the distance (x-x')W(x-x'), where W is a positive definite matrix. W is
+  often taken to be diagonal, but if we allow W to be a general positive
+  definite matrix which can be tuned on the basis of training data, then an
+  eigen-analysis of W shows that we are effectively creating hidden features,
+  where the dimensionality of the hidden-feature space is determined by the
+  data. We demonstrate the superiority of predictions using the general matrix
+  over those based on a diagonal matrix on two test problems.</p>
+
+
+
+</p>
+
+<p id="williams-rasmussen-96">
+C.&nbsp;K.&nbsp;I. Williams and C.&nbsp;E. Rasmussen.
+<a href="http://books.nips.cc/papers/files/nips08/0514.pdf"><b>Gaussian
+  processes for regression</b></a>.
+In D.&nbsp;S. Touretzky, M.&nbsp;C. Mozer, and M.&nbsp;E. Hasselmo, editors, <em>Advances in
+  Neural Information Processing Systems 8</em>, pages 514-520. The MIT
+  Press, Cambridge, MA, 1996.<p class="c"><b> Abstract:</b> The Bayesian
+  analysis of neural networks is difficult because a simple prior over weights
+  implies a complex prior over functions. We investigate the use of a Gaussian
+  process prior over functions, which permits the predictive Bayesian analysis
+  for fixed values of hyperparameters to be carried out exactly using matrix
+  operations. Two methods, using optimization and averaging (via Hybrid Monte
+  Carlo) over hyperparameters have been tested on a number of challenging
+  problems and have produced excellent results.</p>
+
+
+
+</p>
+
+<p id="zhu-williams-rohwer-morciniec-98">
+H.&nbsp;Zhu, C.&nbsp;K.&nbsp;I. Williams, R.&nbsp;J. Rohwer, and M.&nbsp;Morciniec.
+<a href="http://www.dai.ed.ac.uk/homes/ckiw/postscript/NCRG_97_011.ps.gz"><b>Gaussian
+  regression and optimal finite dimensional linear models</b></a>.
+In C.&nbsp;M. Bishop, editor, <em>Neural Networks and Machine Learning</em>.
+  Springer-Verlag, Berlin, 1998.
+See also technical report NCRG/97/011, Aston University.<p class="c"><b>
+  Abstract:</b> The problem of regression under Gaussian assumptions is treated
+  generally. The relationship between Bayesian prediction, regularization and
+  smoothing is elucidated. The ideal regression is the posterior mean and its
+  computation scales as O(n<sup>3</sup>), where n is the same size. We show
+  that the optimal m-dimensional linear model under a given prior is spanned by
+  the first m eigenfunctions of a covaraince operator, which is a trace-class
+  operator. This is an infinite dimensional analogue of principal component
+  analysis. The importance of Hilbert space methods to practical statistics is
+  also discussed.</p>
+
+
+
+</p>
 
 <br>
 
@@ -488,7 +803,481 @@ for example <a href="#williams-barber-98">Williams and Barber 1998</a> or <a
 href="#kuss-rasmussen-05">Kuss and Rasmussen 2005</a>. Bounds from the
 PAC-Bayesian perspective are applied in <a href="#seeger-02">Seeger 2002</a>.
 
-<!--#include file="ref-class.html" -->
+<p id="altun-hofmann-smola-04">
+Y.&nbsp;Altun, T.&nbsp;Hofmann, and A.&nbsp;J. Smola.
+<b>Gaussian process classification for segmenting and annotating
+  sequences.</b>.
+In C.&nbsp;E. Brodley, editor, <em>Proceedings of the Twenty-first International
+  Conference on Machine Learning (ICML 2004)</em>. ACM, 2004.
+
+
+
+</p>
+
+<p id="barber-williams-97">
+D.&nbsp;Barber and C.&nbsp;K.&nbsp;I. Williams.
+<a href="http://books.nips.cc/papers/files/nips09/0340.pdf"><b>Gaussian
+  processes for Bayesian classification via hybrid Monte Carlo</b></a>.
+In M.&nbsp;C. Mozer, M.&nbsp;I. Jordan, and T.&nbsp;Petsche, editors, <em>Advances in Neural
+  Information Processing Systems 9</em>, Cambridge, MA, 1997. The MIT
+  Press.<p class="c"><b> Abstract:</b> The full Bayesian method for applying
+  neural networks to a prediction problem is to set up the prior/hyperprior
+  structure for the net and then perform the necessary integrals. However,
+  these integrals are not tractable analytically, and Markov Chain Monte Carlo
+  (MCMC) methods are slow, especially if the parameter space is
+  high-dimensional. Using Gaussian processes we can approximate the weight
+  space integral analytically, so that only a small number of hyperparameters
+  need be integrated over by MCMC methods. We have applied this idea to
+  classification problems, obtaining excellent results on the real-world
+  problems investigated so far.</p>
+
+
+
+</p>
+
+<p id="choudhuri-ghosal-roy-05">
+N.&nbsp;Choudhuri, S.&nbsp;Ghosal, and A.&nbsp;Roy.
+<a href="http://www4.stat.ncsu.edu/~sghosal/papers.html"><b>Nonparametric
+  binary regression using a Gaussian process prior</b></a>.
+(unpublished), 2005.
+
+
+
+</p>
+
+<p id="csato-fokoue-etal-00">
+L.&nbsp;Csat&oacute;, E.&nbsp;Fokou&eacute;, M.&nbsp;Opper, B.&nbsp;Schottky, and O.&nbsp;Winther.
+<a href="http://books.nips.cc/papers/files/nips12/0251.pdf"><b>Efficient
+  approaches to Gaussian process classification</b></a>.
+In S.&nbsp;A. Solla, T.&nbsp;K. Leen, and K.-R. M&uuml;ller, editors, <em>Advances in
+  Neural Information Processing Systems 12</em>, Cambridge, MA, 2000. The MIT
+  Press.<p class="c"><b> Abstract:</b> We present three simple approximations
+  for the calculation of the posterior mean in Gaussian Process classification.
+  The first two methods are related to mean field ideas known in Statistical
+  Physics. The third approach is based on Bayesan online approach which was
+  motivated by recent results in the Statistical Mechanics of Neural Networks.
+  We present simulation results showing: 1. that the mean field Bayesian
+  evidence may be used for hyperparameter tuning and 2. that the online
+  approach may achieve a low training error fast.</p>
+
+
+
+</p>
+
+<p id="csato-opper-01">
+L.&nbsp;Csat&oacute; and M.&nbsp;Opper.
+<a href="http://books.nips.cc/papers/files/nips13/CsatoOpper.pdf"><b>Sparse
+  representation for Gaussian process models</b></a>.
+In T.&nbsp;K. Leen, T.&nbsp;G. Dietterich, and V.&nbsp;Tresp, editors, <em>Advances in Neural
+  Information Processing Systems 13</em>, Cambridge, MA, 2001. The MIT
+  Press.<p class="c"><b> Abstract:</b> We develop an approach for a sparse
+  representation for Gaussian Process (GP) models in order to overcome the
+  limitations of GPs caused by large data sets. The method is based on a
+  combination of a Bayesian online algorithm together with a sequential
+  construction of a relevant subsample of the data which fully specifies the
+  prediction of the model. Experimental results on toy examples and large
+  real-world datasets indicate that efficiency of the approach.</p>
+
+
+
+</p>
+
+<p id="csato-opper-02">
+L.&nbsp;Csat&oacute; and M.&nbsp;Opper.
+<b>Sparse online Gaussian processes</b>.
+<em>Neural Computation</em>, 14(2):641-669, 2002.<p class="c"><b>
+  Abstract:</b> We develop an approach for sparse representations of gaussian
+  process (GP) models (which are Bayesian types of kernel machines) in order to
+  overcome their limitations for large data sets. The method is based on a
+  combination of a Bayesian on-line algorithm, together with a sequential
+  construction of a relevant subsample of the data that fully specifies the
+  prediction of the GP model. By using an appealing parameterization and
+  projection techniques in a reproducing kernel Hilbert space, recursions for
+  the effective parameters and a sparse gaussian approximation of the posterior
+  process are obtained. This allows for both a propagation of predictions and
+  Bayesian error measures. The significance and robustness of our approach are
+  demonstrated on a variety of experiments.</p>
+
+
+
+</p>
+
+<p id="gibbs-mackay-00">
+M.&nbsp;N. Gibbs and D.&nbsp;J.&nbsp;C. MacKay.
+<a href="http://www.inference.phy.cam.ac.uk/mackay/abstracts/vgc.html"><b>Variational
+  Gaussian process classifiers</b></a>.
+<em>IEEE Transactions on Neural Networks</em>, 11(6):1458-1464, 2000.<p
+  class="c"><b> Abstract:</b> Gaussian processes are a promising non-linear
+  interpolation tool [williams-95,<a href="#williams-rasmussen-96">Williams and
+  Rasmussen 1996</a>], but it is not straightforward to solve classification
+  problems with them. In this paper the variational methods of
+  [jaakkola-jordan-96] are applied to Gaussian processes to produce an
+  efficient Bayesian binary classifier.</p>
+
+
+
+</p>
+
+<p id="girolami-rogers-06">
+M.&nbsp;Girolami and S.&nbsp;Rogers.
+<a href="http://www.dcs.gla.ac.uk/people/personal/girolami/pubs_2005/VBGP/index.htm"><b>Variational
+  Bayesian multinomial probit regression with Gaussian process
+  priors</b></a>.
+<em>Neural Computation</em>, 18(8):1790-1817, 2006.<p class="c"><b>
+  Abstract:</b> It is well known in the statistics literature that augmenting
+  binary and polychotomous response models with Gaussian latent variables
+  enables exact Bayesian analysis via Gibbs sampling from the parameter
+  posterior. By adopting such a data augmentation strategy, dispensing with
+  priors over regression coefficients in favour of Gaussian Process (GP) priors
+  over functions, and employing variational approximations to the full
+  posterior we obtain efficient computational methods for Gaussian Process
+  classification in the multi-class setting. The model augmentation with
+  additional latent variables ensures full a posteriori class coupling whilst
+  retaining the simple a priori independent GP covariance structure from which
+  sparse approximations, such as multi-class Informative Vector Machines (IVM),
+  emerge in a very natural and straightforward manner. This is the first time
+  that a fully Variational Bayesian treatment for multi-class GP classification
+  has been developed without having to resort to additional explicit
+  approximations to the non-Gaussian likelihood term. Empirical comparisons
+  with exact analysis via MCMC and Laplace approximations illustrate the
+  utility of the variational approximation as a computationally economic
+  alternative to full MCMC and it is shown to be more accurate than the Laplace
+  approximation.</p>
+
+
+
+</p>
+
+<p id="kapoor-grauman-urtasun-darell-07">
+A.&nbsp;Kapoor, K.&nbsp;Grauman, R.&nbsp;Urtasun, and T.&nbsp;Darell.
+<a href="http://people.csail.mit.edu/rurtasun/publications/iccv_kapoor_et_al.pdf"><b>Active
+  learning with Gaussian processes for object categorization</b></a>.
+In <em>Proceedings of the International Conference in Cmputer Vision</em>,
+  2007.<p class="c"><b> Abstract:</b> Discriminative methods for visual object
+  category recognition are typically non-probabilistic, predicting class labels
+  but not directly providing an estimate of uncertainty. Gaussian Processes
+  (GPs) are powerful regression techniques with explicit uncertainty models; we
+  show here how Gaussian Processes with covariance functions defined based on a
+  Pyramid Match Kernel (PMK) can be used for probabilistic object category
+  recognition. The uncertainty model provided by GPs offers confidence
+  estimates at test points, and naturally allows for an active learning
+  paradigm in which points are optimally selected for interactive labeling. We
+  derive a novel active category learning method based on our probabilistic
+  regression model, and show that a significant boost in classification
+  performance is possible, especially when the amount of training data for a
+  category is ultimately very small.</p>
+
+
+
+</p>
+
+<p id="kim-ghahramani-03">
+H.-C. Kim and Z.&nbsp;Ghahramani.
+<a href="http://www.gatsby.ucl.ac.uk/~zoubin/papers/ecml03.pdf"><b>The EM-EP
+  algorithm for Gaussian process classification</b></a>.
+In <em>Proceedings of the Workshop on Probabilistic Graphical Models for
+  Classification (at ECML)</em>, 2003.<p class="c"><b> Abstract:</b> Gaussian
+  process classifiers (GPCs) are fully statistical kernel classification models
+  derived from Gaussian processes for regression. In GPCs, the probability of
+  belonging to a certain class at an input location is monotonically related to
+  the value of some latent function at that location. Starting from a prior
+  over this latent function, the data are used to infer both the posterior over
+  the latent function and the values of hyperparameters determining various
+  aspects of the function. GPCs can also be viewed as graphical models with
+  latent variables. Based on the work of [<a href="#minka-01a">Minka 2001</a>,
+  <a href="#opper-winther-00">Opper and Winther 2000</a>], we present an
+  approximate EM algorithm, the EM-EP algorithm for learning both the latent
+  function and the hyperparameters of a GPC. The algorithm alternates the
+  following steps until convergence. In the E-step, given the hyperparameters,
+  a density for the latent variables defining the latent function is computed
+  via the Expectation-Propagation (EP) algorithm [<a href="#minka-01a">Minka
+  2001</a>, <a href="#opper-winther-00">Opper and Winther 2000</a>]. In the
+  M-step, given the density for the latent values, the hyperparameters are
+  selected to maximize a variational lower bound on the marginal likelihood
+  (i.e. the model evidence). This algorithm is found to converge in practice
+  and provides an efficient Bayesian framework for learning hyperparameters of
+  the kernel. We examine the role of various different hyperparameters which
+  model labeling errors, the lengthscales (i.e. relevances) of different
+  features, and sharpness of the decision boundary. The added flexibility these
+  provide results in signicantly improved performance. Experimental results on
+  synthetic and real data sets show that the EM-EP algorithm works well, with
+  GPCs giving equal or better performance than support vector machines (SVMs)
+  on all data sets tested.</p>
+
+
+
+</p>
+
+<p id="kuss-rasmussen-05">
+M.&nbsp;Kuss and C.&nbsp;E. Rasmussen.
+<a href="http://www.jmlr.org/papers/volume6/kuss05a/kuss05a.pdf"><b>Assessing
+  approximate inference for binary Gaussian process classification</b></a>.
+<em>Journal of Machine Learning Research</em>, 6:1679-1704, 2005.<p
+  class="c"><b> Abstract:</b> Gaussian process priors can be used to define
+  flexible, probabilistic classification models. Unfortunately exact Bayesian
+  inference is analytically intractable and various approximation techniques
+  have been proposed. In this work we review and compare Laplace's method and
+  Expectation Propagation for approximate Bayesian inference in the binary
+  Gaussian process classification model. We present a comprehensive comparison
+  of the approximations, their predictive performance and marginal likelihood
+  estimates to results obtained by MCMC sampling. We explain theoretically and
+  corroborate empirically the advantages of Expectation Propagation compared to
+  Laplace's method.</p>
+
+
+
+</p>
+
+<p id="kuss-rasmussen-06">
+M.&nbsp;Kuss and C.&nbsp;E. Rasmussen.
+<a href="http://books.nips.cc/papers/files/nips18/NIPS2005_0163.pdf"><b>Assessing
+  approximations for Gaussian process classification</b></a>.
+In Y.&nbsp;Weiss, B.&nbsp;Sch&ouml;lkopf, and J.&nbsp;Platt, editors, <em>Advances in Neural
+  Information Processing Systems 18</em>, pages 699-706, Cambridge, MA, 2006.
+  The MIT Press.<p class="c"><b> Abstract:</b> Gaussian processes are
+  attractive models for probabilistic classification but unfortunately exact
+  inference is analytically intractable. We compare Laplace's method and
+  Expectation Propagation (EP) focusing on marginal likelihood estimates and
+  predictive performance. We explain theoretically and corroborate empirically
+  that EP is superior to Laplace. We also compare to a sophisticated MCMC
+  scheme and show that EP is surprisingly accurate.</p>
+
+
+
+</p>
+
+<p id="lawrence-jordan-05">
+N.&nbsp;D. Lawrence and M.&nbsp;I. Jordan.
+<a href="http://books.nips.cc/papers/files/nips17/NIPS2004_0257.pdf"><b>Semi-supervised
+  learning via Gaussian processes</b></a>.
+In L.&nbsp;K. Saul, Y.&nbsp;Weiss, and Bottou L, editors, <em>Advances in Neural
+  Information Processing Systems 17</em>, pages 753-760, Cambridge, MA, 2005.
+  The MIT Press.<p class="c"><b> Abstract:</b> We present a probabilistic
+  approach to learning a Gaussian Process classifier in the presence of
+  unlabeled data. Our approach involves a "null category noise model" (NCNM)
+  inspired by ordered cate- gorical noise models. The noise model re ects an
+  assumption that the data density is lower between the class-conditional
+  densities. We illustrate our approach on a toy problem and present
+  comparative results for the semi-supervised classification of handwritten
+  digits.</p>
+
+
+
+</p>
+
+<p id="neal-98">
+R.&nbsp;M. Neal.
+<b>Regression and classification using Gaussian process priors</b>.
+In J.&nbsp;M. Bernardo, J.&nbsp;O. Berger, A.&nbsp;P. Dawid, and A.&nbsp;F.&nbsp;M. Smith, editors,
+  <em>Bayesian Statistics 6</em>, pages 475-501. Oxford University Press,
+  1998.<p class="c"><b> Abstract:</b> Gaussian processes are a natural way of
+  specifying prior distributions over functions of one or more input variables.
+  When such a function defines the mean response in a regression model with
+  Gaussian errors, inference can be done using matrix computations, which are
+  feasible for datasets of up to about a thousand cases. The covariance
+  function of the Gaussian process can be given a hierarchical prior, which
+  allows the model to discover high-level properties of the data, such as which
+  inputs are relevant to predicting the response. Inference for these
+  covariance hyperparameters can be done using Markov chain sampling.
+  Classification models can be defined using Gaussian processes for underlying
+  latent values, which can also be sampled within the Markov chain. Gaussian
+  processes are in my view the simplest and most obvious way of defining
+  flexible Bayesian regression and classification models, but despite some past
+  usage, they appear to have been rather neglected as a general-purpose
+  technique. This may be partly due to a confusion between the properties of
+  the function being modeled and the properties of the best predictor for this
+  unknown function.</p>
+
+
+
+</p>
+
+<p id="nickisch-rasmussen-08">
+H.&nbsp;Nickisch and C.&nbsp;E. Rasmussen.
+<a href="http://jmlr.csail.mit.edu/papers/volume9/nickisch08a/nickisch08a.pdf"><b>Approximations
+  for binary Gaussian process classification</b></a>.
+<em>Journal of Machine Learning Research</em>, 9:2035-2078, 2008.<p
+  class="c"><b> Abstract:</b> We provide a comprehensive overview of many
+  recent algorithms for approximate inference in Gaussian process models for
+  probabilistic binary classification. The relationships between several
+  approaches are elucidated theoretically, and the properties of the different
+  algorithms are corroborated by experimental results. We examine both 1) the
+  quality of the predictive distributions and 2) the suitability of the
+  different marginal likelihood approximations for model selection (selecting
+  hyperparameters) and compare to a gold standard based on MCMC. Interestingly,
+  some methods produce good predictive distributions although their marginal
+  likelihood approximations are poor. Strong conclusions are drawn about the
+  methods: The Expectation Propagation algorithm is almost always the method of
+  choice unless the computational budget is very tight. We also extend existing
+  methods in various ways, and provide unifying code implementing all
+  approaches.</p>
+
+
+
+</p>
+
+<p id="opper-winther-00">
+M.&nbsp;Opper and O.&nbsp;Winther.
+<b>Gaussian processes for classification: Mean-field algorithms</b>.
+<em>Neural Computation</em>, 12(11):2655-2684, 2000.<p class="c"><b>
+  Abstract:</b> We derive a mean-field algorithm for binary classification with
+  gaussian processes that is based on the TAP approach originally proposed in
+  statistical physics of disordered systems. The theory also yields an
+  approximate leave-one-out estimator for the generalization error, which is
+  computed with no extra computational cost. We show that from the TAP
+  approach, it is possible to derive both a simpler "naive" mean-field theory
+  and support vector machines (SVMs) as limiting cases. For both mean-field
+  algorithms and support vector machines, simulation results for three small
+  benchmark data sets are presented. They show that one may get
+  state-of-the-art performance by using the leave-one-out estimator for model
+  selection and the built-in leave-one-out estimators are extremely precise
+  when compared to the exact leave-one-out estimate. The second result is taken
+  as strong support for the internal consistency of the mean-field
+  approach.</p>
+
+
+
+</p>
+
+<p id="opper-winther-99">
+M.&nbsp;Opper and O.&nbsp;Winther.
+<a href="http://books.nips.cc/papers/files/nips11/0309.pdf"><b>Mean field
+  methods for classification with Gaussian processes</b></a>.
+In M.&nbsp;S. Kearns, S.&nbsp;A. Solla, and D.&nbsp;A. Cohn, editors, <em>Advances in Neural
+  Information Processing Systems 11</em>, pages 309-315, Cambridge, MA, 1999.
+  The MIT Press.<p class="c"><b> Abstract:</b> We discuss the application of
+  TAP mean field methods known from the Statistical Mechanics of diordered
+  systems to Bayesian classification models with Gaussian processes. In
+  contrast to previous approaches, no knowledge about the distribution of
+  inputs is needed. Simulation results for the Sonar data set are given.</p>
+
+
+
+</p>
+
+<p id="pena-centeno-lawrence-06">
+T.&nbsp;Peña Centeno and N.&nbsp;D. Lawrence.
+<a href="http://jmlr.csail.mit.edu/papers/volume7/centeno06a/centeno06a.pdf"><b>Optimising
+  kernel parameters and regularisation coefficients for non-linear discriminant
+  analysis</b></a>.
+<em>Journal of Machine Learning Research</em>, 7:455-491, 2006.<p
+  class="c"><b> Abstract:</b> In this paper we consider a novel Bayesian
+  interpretation of Fisher's discriminant analysis. We relate Rayleigh's
+  coefficient to a noise model that minimises a cost based on the most probable
+  class centres and that abandons the 'regression to the labels' assumption
+  used by other algorithms. Optimisation of the noise model yields a direction
+  of discrimination equivalent to Fisher's discriminant, and with the
+  incorporation of a prior we can apply Bayes' rule to infer the posterior
+  distribution of the direction of discrimination. Nonetheless, we argue that
+  an additional constraining distribution has to be included if sensible
+  results are to be obtained. Going further, with the use of a Gaussian process
+  prior we show the equivalence of our model to a regularised kernel Fisher's
+  discriminant. A key advantage of our approach is the facility to determine
+  kernel parameters and the regularisation coefficient through the optimisation
+  of the marginal log-likelihood of the data. An added bonus of the new
+  formulation is that it enables us to link the regularisation coefficient with
+  the generalisation error.</p>
+
+
+
+</p>
+
+<p id="seeger-02">
+M.&nbsp;Seeger.
+<a href="http://www.jmlr.org/papers/volume3/seeger02a/seeger02a.pdf"><b>PAC-Bayesian
+  generalisation error bounds for Gaussian process classification</b></a>.
+<em>Journal of Machine Learning Research</em>, 3:233-269, 2002.<p
+  class="c"><b> Abstract:</b> Approximate Bayesian Gaussian process (GP)
+  classification techniques are powerful non-parametric learning methods,
+  similar in appearance and performance to support vector machines. Based on
+  simple probabilistic models, they render interpretable results and can be
+  embedded in Bayesian frameworks for model selection, feature selection, etc.
+  In this paper, by applying the PAC-Bayesian theorem of McAllester (1999a), we
+  prove distribution-free generalisation error bounds for a wide range of
+  approximate Bayesian GP classification techniques. We also provide a new and
+  much simplified proof for this powerful theorem, making use of the concept of
+  convex duality which is a backbone of many machine learning techniques. We
+  instantiate and test our bounds for two particular GPC techniques, including
+  a recent sparse method which circumvents the unfavourable scaling of standard
+  GP algorithms. As is shown in experiments on a real-world task, the bounds
+  can be very tight for moderate training sample sizes. To the best of our
+  knowledge, these results provide the tightest known distribution-free error
+  bounds for approximate Bayesian GPC methods, giving a strong
+  learning-theoretical justification for the use of these techniques.</p>
+
+
+
+</p>
+
+<p id="seeger-jordan-04">
+M.&nbsp;Seeger and M.&nbsp;I. Jordan.
+<a href="http://www.kyb.tuebingen.mpg.de/bs/people/seeger/papers/ivmmulti.pdf"><b>Sparse
+  Gaussian process classification with multiple classes</b></a>.
+Technical Report TR 661, Department of Statistics, University of California
+  at Berkeley, 2004.<p class="c"><b> Abstract:</b> Sparse approximations to
+  Bayesian inference for nonparametric Gaussian Process models scale linearly
+  in the number of training points, allowing for the application of these
+  powerful kernel-based models to large datasets. We show how to generalize the
+  binary classification Informative Vector Machine (IVM) to multiple classes.
+  In contrast to earlier efficient approaches to kernel-based non-binary
+  classification, our method is a principled approximation to Bayesian
+  inference which yields valid uncertainty estimates and allows for
+  hyperparameter adaption via marginal likelihood maximization. While most
+  earlier proposals suggest fitting independent binary discriminants to
+  heuristically chosen partitions of the data and combining these in a
+  heuristic manner, our method operates jointly on the data for all classes.
+  Crucially, we still achieve a linear scaling in both the number of classes
+  and the number of training points.</p>
+
+
+
+</p>
+
+<p id="urtasun-darrell-07">
+R.&nbsp;Urtasun and T.&nbsp;Darrell.
+<a href="http://people.csail.mit.edu/rurtasun/publications/icml_urtasun_darrell.pdf"><b>Discriminative
+  Gaussian process latent variable model for classification</b></a>.
+In <em>24th International Conference on Machine Learning</em>, 2007.<p
+  class="c"><b> Abstract:</b> Supervised learning is dicult with high
+  dimensional input spaces and very small training sets, but accurate
+  classcation may be possible if the data lie on a low-dimensional manifold.
+  Gaussian Process Latent Variable Models can discover low dimensional
+  manifolds given only a small number of examples, but learn a latent space
+  without regard for class labels. Existing methods for discriminative manifold
+  learning (e.g., LDA, GDA) do constrain the class distribution in the latent
+  space, but are generally deterministic and may not generalize well with
+  limited training data. We introduce a method for Gaussian Process Classcation
+  using latent variable models trained with discriminative priors over the
+  latent space, which can learn a discriminative latent space from a small
+  training set.</p>
+
+
+
+</p>
+
+<p id="williams-barber-98">
+C.&nbsp;K.&nbsp;I. Williams and D.&nbsp;Barber.
+<a href="http://www.dai.ed.ac.uk/homes/ckiw/postscript/pami_final.ps.gz"><b>Bayesian
+  classification with Gaussian processes</b></a>.
+<em>IEEE Transactions on Pattern Analysis and Machine Intelligence</em>,
+  20(12):1342-1351, 1998.
+Accompanying <a
+  href="http://www.dai.ed.ac.uk/homes/ckiw/code/gpclass.tar.gz">code</a>.<p
+  class="c"><b> Abstract:</b> We consider the problem of assigning an input
+  vector <b>x</b> to one of m classes by predicting P(c|<b>x</b>) for
+  c=1,...,m. For a two-class problem, the probability of class 1 given <b>x</b>
+  is esimated by &sigma;(y(<b>x</b>)), where &sigma;(y)=1/(1+e<sup>-y</sup>). A
+  Gaussian process prior is placed on y(<b>x</b>), and is combined with the
+  training data to obtain predictions for the <b>x</b> points. We provide a
+  Bayesian treatment, integrating over uncertainty in y and in the parameters
+  that control the Gaussian process prior; the necessary integration over y is
+  carried out using Laplace's approximation. The method is generalized to
+  multi-class problems (m>2) using the softmax function. We demonstrate the
+  effectiveness of the method on a number of datasets.</p>
+
+
+
+</p>
 
 <br>
 
@@ -500,13 +1289,350 @@ functions, while others give mathematical characterizations, see eg. <a
 href="#abrahamsen-97">Abrahamsen 1997</a> for a review. Some references
 describe non-standard covariance functions leading to non-stationarity etc.
 
-<!--#include file="ref-cov.html" -->
+<p id="abrahamsen-97">
+P.&nbsp;Abrahamsen.
+<a href="http://publications.nr.no/917_Rapport.pdf"><b>A review of Gaussian
+  random fields and correlation functions</b></a>.
+Technical Report 917, Norwegian Computing Center, Oslo, 1997.
+
+
+
+</p>
+
+<p id="adler-81">
+R.&nbsp;J. Adler.
+<b>The Geometry of Random Fields</b>.
+John Wiley &amp; Sons, Chichester, 1981.
+
+
+
+</p>
+
+<p id="doob-44">
+J.&nbsp;L. Doob.
+<b>The elementary Gaussian processes</b>.
+<em>Annals of Mathematical Statistics</em>, 15(3):229-282, 1944.
+
+
+
+</p>
+
+<p id="gibbs-97">
+M.&nbsp;N. Gibbs.
+<a href="http://www.inference.phy.cam.ac.uk/mng10/GP/thesis.ps.gz"><b>Bayesian
+  Gaussian Processes for Regression and Classification</b></a>.
+PhD thesis, Department of Physics, University of Cambridge, 1997.<p
+  class="c"><b> Abstract:</b> Bayesian inference offers us a powerful tool with
+  which to tackle the problem of data modelling. However the performance of
+  Bayesian methods is crucially dependent on being able to find good models for
+  our data. The principal focus of this thesis is the development of models
+  based on Gaussian process priors. Such models, which can be thought of as the
+  infinite extension of several existing finite models have the flexibility to
+  model complex phenomena while being mathematically simple. In thesis, I
+  present a review of the theory of Gaussian processes and their covariance
+  functions and demonstrate how they fit into the Bayesian framework. The
+  efficient implementation of a Gaussian process is discussed with particular
+  reference to approximate methods for matrix inversion based on the work of
+  Skilling (1993). Several regression problems are examined. Non-stationary
+  covariance functions are developed for the regression of neuron spike data
+  and the use of Gaussian processes to model the potential energy surfaces of
+  weakly bound molecules is discussed. Classification methods based on Gaussian
+  processes are implemented using variational methods. Existing bounds
+  (Jaakkola and Jordan 1996) for the sigmoid function are used to tackle binary
+  problems and multi-dimensional bounds on the softmax function are presented
+  for the multiple class case. The performance of the variational classifier is
+  compared with that of other methods using the CRABS and PIMA datasets (Ripley
+  1996) and the problem of predicting the cracking of welds based on their
+  chemical composition is also investigated. The theoretical calculation of the
+  density of states of crystal structures is discussed in detail. Three
+  possible approaches to the problem are described based on free energy
+  minimization, Gaussian processes and the theory of random matrices. Results
+  from these approaches are compared with the state-of-the-art techniques
+  (Pickard 1997).</p>
+
+
+
+</p>
+
+<p id="matheron-73">
+G.&nbsp;Matheron.
+<b>The intrinsic random functions and their applications</b>.
+<em>Advances in Applied Probability</em>, 5:439-468, 1973.
+
+
+
+</p>
+
+<p id="meiring-monestiez-etal-97">
+W.&nbsp;Meiring, P.&nbsp;Monestiez, P.&nbsp;D. Sampson, and Guttorp. P.
+<b>Developments in the modelling of nonstationary spatial covariance structure
+  for space-time monitoring data</b>.
+In E.&nbsp;Y. Baafi and N.&nbsp;Schofield, editors, <em>Geostatistics Wollongong
+  '96</em>, volume&nbsp;1, pages 162-173. Kluwer, 1997.
+
+
+
+</p>
+
+<p id="neal-96">
+R.&nbsp;M. Neal.
+<a href="http://www.cs.utoronto.ca/~radford/bnn.book.html"><b>Bayesian Learning
+  for Neural Networks</b></a>.
+Springer, New York, 1996.
+chapter 2.<p class="c"><b> Abstract:</b> Artificial ``neural networks'' are now
+  widely used as flexible models for regression and classification
+  applications, but questions remain regarding what these models mean, and how
+  they can safely be used when training data is limited. Bayesian Learning for
+  Neural Networks shows that Bayesian methods allow complex neural network
+  models to be used without fear of the ``overfitting'' that can occur with
+  traditional neural network learning methods. Insight into the nature of these
+  complex Bayesian models is provided by a theoretical investigation of the
+  priors over functions that underlie them. Use of these models in practice is
+  made possible using Markov chain Monte Carlo techniques. Both the theoretical
+  and computational aspects of this work are of wider statistical interest, as
+  they contribute to a better understanding of how Bayesian methods can be
+  applied to complex problems. Presupposing only basic knowledge of probability
+  and statistics, this book should be of interest to many researchers in
+  Statistics, Engineering, and Artificial Intelligence. Software for Unix
+  systems that implements the methods described is freely available over the
+  Internet.</p>
+
+<p class="c"><b> Comment:</b> Gaussian processes are not the main topic of this
+  book but, chapter 2 entitled "Priors for Infinite Networks" contains a
+  characterization of Gaussian and non-Gaussian limits of priors over functions
+  generated from neural networks. See also <a href="#williams-98">Williams
+  1998</a>.</p>
+
+</p>
+
+<p id="paciorek-schervish-04">
+C.&nbsp;J. Paciorek and M.&nbsp;J. Schervish.
+<a href="http://books.nips.cc/papers/files/nips16/NIPS2003_AA35.pdf"><b>Nonstationary
+  covariance functions for Gaussian process regression</b></a>.
+In S.&nbsp;Thrun, L.&nbsp;Saul, and B.&nbsp;Sch&ouml;lkopf, editors, <em>Advances in Neural
+  Information Processing Systems 16</em>. The MIT Press, 2004.
+
+
+
+</p>
+
+<p id="sampson-guttorp-92">
+P.&nbsp;D. Sampson and P.&nbsp;Guttorp.
+<b>Nonparametric estimation of nonstationary spatial covariance structure</b>.
+<em>Journal of the American Statistical Association</em>, 87(417):108-119,
+  1992.
+
+
+
+</p>
+
+<p id="schmidt-ohagan-03">
+A.&nbsp;M. Schmidt and A.&nbsp;O'Hagan.
+<b>Bayesian inference for non-stationary spatial covariance structure via
+  spatial deformations</b>.
+<em>Journal of the Royal Statistical Society B</em>, 65(3):745-758, 2003.
+
+
+
+</p>
+
+<p id="schoenberg-38">
+I.&nbsp;J. Schoenberg.
+<b>Metric spaces and positive definite functions</b>.
+<em>Transactions of the American Mathematical Society</em>, 44(3):522-536,
+  1938.
+
+
+
+</p>
+
+<p id="williams-98">
+C.&nbsp;K.&nbsp;I. Williams.
+<a href="http://www.dai.ed.ac.uk/homes/ckiw/postscript/NCRG_97_025.ps.gz"><b>Computation
+  with infinite neural networks</b></a>.
+<em>Neural Computation</em>, 10:1203-1216, 1998.<p class="c"><b> Abstract:</b>
+  For neural networks with a wide class of weight priors, it can be shown that
+  in the limit of an infinite number of hidden units, the prior over functions
+  tends to a Gaussian process. In this article, analytic forms are derived for
+  the covariance function of the Gaussian processes corresponding to networks
+  with sigmoidal and gaussian hidden units. This allows predictions to be made
+  efficiently using networks with an infinite number of hidden units and shows,
+  somewhat paradoxically, that it may be easier to carry out Bayesian
+  prediction with infinite networks rather than finite ones.</p>
+
+
+
+</p>
+
+<p id="yaglom-62">
+A.&nbsp;M. Yaglom.
+<b>Stationary Random Functions</b>.
+Prentice-Hall, Englewood Cliffs, NJ, 1962.
+
+
+
+</p>
 
 <br>
 
 <h3 id="select">Model Selection</h3>
 
-<!--#include file="ref-select.html" -->
+<p id="mackay-99">
+D.&nbsp;J.&nbsp;C. MacKay.
+<b>Comparison of approximate methods for handling hyperparameters</b>.
+<em>Neural Compuration</em>, 11(5):1035-1068, 1999.
+
+
+
+</p>
+
+<p id="mardia-84">
+K.&nbsp;V. Mardia and R.&nbsp;J. Marshall.
+<b>Maximum likelihood estimation of models for residual covariance in spatial
+  regression</b>.
+<em>Biometrika</em>, 71(1):135-146, 1984.
+
+
+
+</p>
+
+<p id="qi-minka-etal-04">
+Y.&nbsp;Qi, T.&nbsp;P. Minka, R.&nbsp;W. Picard, and Z.&nbsp;Ghahramani.
+<b>Predictive automatic relevance determination by expectation propagation</b>.
+In C.&nbsp;E. Brodley, editor, <em>Proceedings of Twenty-first International
+  Conference on Machine Learning</em>, 2004.
+
+
+
+</p>
+
+<p id="schwaighofer-tresp-yu-05">
+A.&nbsp;Schwaighofer, V.&nbsp;Tresp, and K.&nbsp;Yu.
+<a href="http://books.nips.cc/papers/files/nips17/NIPS2004_0763.pdf"><b>Learning
+  Gaussian process kernels via hierarchical bayes</b></a>.
+In L.&nbsp;K. Saul, Y.&nbsp;Weiss, and L.&nbsp;Bottou, editors, <em>Advances in Neural
+  Information Processing Systems 17</em>, Cambridge, MA, 2005. The MIT Press.
+
+
+
+</p>
+
+<p id="seeger-00">
+M.&nbsp;Seeger.
+<a href="http://books.nips.cc/papers/files/nips12/0603.pdf"><b>Bayesian model
+  selection for support vector machines, Gaussian processes and other kernel
+  classifiers</b></a>.
+In S.&nbsp;A. Solla, T.&nbsp;K. Leen, and K.-R. M&uuml;ller, editors, <em>Advances in
+  Neural Information Processing Systems 12</em>, pages 603-609, Cambridge, MA,
+  2000. The MIT Press.
+
+
+
+</p>
+
+<p id="seeger-02">
+M.&nbsp;Seeger.
+<a href="http://www.jmlr.org/papers/volume3/seeger02a/seeger02a.pdf"><b>PAC-Bayesian
+  generalisation error bounds for Gaussian process classification</b></a>.
+<em>Journal of Machine Learning Research</em>, 3:233-269, 2002.<p
+  class="c"><b> Abstract:</b> Approximate Bayesian Gaussian process (GP)
+  classification techniques are powerful non-parametric learning methods,
+  similar in appearance and performance to support vector machines. Based on
+  simple probabilistic models, they render interpretable results and can be
+  embedded in Bayesian frameworks for model selection, feature selection, etc.
+  In this paper, by applying the PAC-Bayesian theorem of McAllester (1999a), we
+  prove distribution-free generalisation error bounds for a wide range of
+  approximate Bayesian GP classification techniques. We also provide a new and
+  much simplified proof for this powerful theorem, making use of the concept of
+  convex duality which is a backbone of many machine learning techniques. We
+  instantiate and test our bounds for two particular GPC techniques, including
+  a recent sparse method which circumvents the unfavourable scaling of standard
+  GP algorithms. As is shown in experiments on a real-world task, the bounds
+  can be very tight for moderate training sample sizes. To the best of our
+  knowledge, these results provide the tightest known distribution-free error
+  bounds for approximate Bayesian GPC methods, giving a strong
+  learning-theoretical justification for the use of these techniques.</p>
+
+
+
+</p>
+
+<p id="sollich-02">
+P.&nbsp;Sollich.
+<b>Bayesian methods for support vector machines: Evidence and predictive class
+  probabilities</b>.
+<em>Machine Learning</em>, 46(1-3):21-52, 2002.<p class="c"><b> Abstract:</b>
+  I describe a framework for interpreting Support Vector Machines (SVMs) as
+  maximum a posteriori (MAP) solutions to inference problems with Gaussian
+  Process priors. This probabilistic interpretation can provide intuitive
+  guidelines for choosing a lsquogoodrsquo SVM kernel. Beyond this, it allows
+  Bayesian methods to be used for tackling two of the outstanding challenges in
+  SVM classification: how to tune hyperparameters\u2014the misclassification
+  penalty C, and any parameters specifying the ernel\u2014and how to obtain
+  predictive class probabilities rather than the conventional deterministic
+  class label predictions. Hyperparameters can be set by maximizing the
+  evidence; I explain how the latter can be defined and properly normalized.
+  Both analytical approximations and numerical methods (Monte Carlo chaining)
+  for estimating the evidence are discussed. I also compare different methods
+  of estimating class probabilities, ranging from simple evaluation at the MAP
+  or at the posterior average to full averaging over the posterior. A simple
+  toy application illustrates the various concepts and techniques.</p>
+
+
+
+</p>
+
+<p id="sundararajan-keerthi-00">
+S.&nbsp;Sundararajan and S.&nbsp;S. Keerthi.
+<a href="http://books.nips.cc/papers/files/nips12/0631.pdf"><b>Predictive
+  approaches for choosing hyperparameters in Gaussian processes,</b></a>.
+In S.&nbsp;A. Solla, T.&nbsp;K. Leen, and K.-R. M&uuml;ller, editors, <em>Advances in
+  Neural Information Processing Systems 12</em>, Cambridge, MA, 2000. The MIT
+  Press.
+
+
+
+</p>
+
+<p id="sundararajan-keerthi-01">
+S.&nbsp;Sundararajan and S.&nbsp;Sathiya Keerthi.
+<b>Predictive approaches for choosing hyperparameters in Gaussian
+  processes</b>.
+<em>Neural Computation</em>, 13:1103-1118, 2001.
+
+
+
+</p>
+
+<p id="vivarelli-williams-99">
+F.&nbsp;Vivarelli and C.&nbsp;K.&nbsp;I Williams.
+<a href="http://books.nips.cc/papers/files/nips11/0613.pdf"><b>Discovering
+  hidden features with Gaussian processes regression</b></a>.
+In M.&nbsp;S. Kearns, S.&nbsp;A. Solla, and D.&nbsp;A. Cohn, editors, <em>Advances in Neural
+  Information Processing Systems 11</em>. The MIT Press, 1999.<p
+  class="c"><b> Abstract:</b> In Gaussian process regression the covariance
+  between the outputs at input locations x and x' is usually assumed to depend
+  on the distance (x-x')W(x-x'), where W is a positive definite matrix. W is
+  often taken to be diagonal, but if we allow W to be a general positive
+  definite matrix which can be tuned on the basis of training data, then an
+  eigen-analysis of W shows that we are effectively creating hidden features,
+  where the dimensionality of the hidden-feature space is determined by the
+  data. We demonstrate the superiority of predictions using the general matrix
+  over those based on a diagonal matrix on two test problems.</p>
+
+
+
+</p>
+
+<p id="wahba-78">
+G.&nbsp;Wahba.
+<b>Improper priors, spline smoothing and the problem of guarding against model
+  errors in regression</b>.
+<em>Journal of the Royal Statistical Society, Series B</em>, 40:364-372, 1978.
+
+
+
+</p>
 
 <br>
 
@@ -522,7 +1648,568 @@ see <a href="#quinonero-candela-rasmussen-05">Qui&ntilde;onero-Candela and
 Ramussen 2005</a> for a unifying framework for sparse approximations in the
 Gaussian regression model.
 
-<!--#include file="ref-approx.html" -->
+<p id="csato-02">
+L.&nbsp;Csat&oacute;.
+<a href="http://www.cs.ubbcluj.ro/%7Ecsatol/publications/thesis.pdf"><b>Gaussian
+  Processes - Iterative Sparse Approximations</b></a>.
+PhD thesis, Neural Computing Research Group, Aston University, 2002.<p
+  class="c"><b> Abstract:</b> In recent years there has been an increased
+  interest in applying non-parametric methods to real-world problems.
+  Significant research has been devoted to Gaussian processes (GPs) due to
+  their increased flexibility when compared with parametric models. These
+  methods use Bayesian learning, which generally leads to analytically
+  intractable posteriors. This thesis proposes a two-step solution to construct
+  a probabilistic approximation to the posterior. In the first step we adapt
+  the Bayesian online learning to GPs: the final approximation to the posterior
+  is the result of propagating the first and second moments of intermediate
+  posteriors obtained by combining a new example with the previous
+  approximation. The propagation of functional forms is solved by showing the
+  existence of a parametrisation to posterior moments that uses combinations of
+  the kernel function at the training points, transforming the Bayesian online
+  learning of functions into a parametric formulation. The drawback is the
+  prohibitive quadratic scaling of the number of parameters with the size of
+  the data, making the method inapplicable to large datasets. The second step
+  solves the problem of the exploding parameter size and makes GPs applicable
+  to arbitrarily large datasets. The approximation is based on a measure of
+  distance between two GPs, the KL-divergence between GPs. This second
+  approximation is with a constrained GP in which only a small subset of the
+  whole training dataset is used to represent the GP. This subset is called the
+  Basis Vector, or BV set and the resulting GP is a sparse approximation to the
+  true posterior. As this sparsity is based on the KL-minimisation, it is
+  probabilistic and independent of the way the posterior approximation from the
+  first step is obtained. We combine the sparse approximation with an extension
+  to the Bayesian online algorithm that allows multiple iterations for each
+  input and thus approximating a batch solution. The resulting sparse learning
+  algorithm is a generic one: for different problems we only change the
+  likelihood. The algorithm is applied to a variety of problems and we examine
+  its performance both on more classical regression and classification tasks
+  and to the data-assimilation and a simple density estimation problems.</p>
+
+
+
+</p>
+
+<p id="csato-fokoue-etal-00">
+L.&nbsp;Csat&oacute;, E.&nbsp;Fokou&eacute;, M.&nbsp;Opper, B.&nbsp;Schottky, and O.&nbsp;Winther.
+<a href="http://books.nips.cc/papers/files/nips12/0251.pdf"><b>Efficient
+  approaches to Gaussian process classification</b></a>.
+In S.&nbsp;A. Solla, T.&nbsp;K. Leen, and K.-R. M&uuml;ller, editors, <em>Advances in
+  Neural Information Processing Systems 12</em>, Cambridge, MA, 2000. The MIT
+  Press.<p class="c"><b> Abstract:</b> We present three simple approximations
+  for the calculation of the posterior mean in Gaussian Process classification.
+  The first two methods are related to mean field ideas known in Statistical
+  Physics. The third approach is based on Bayesan online approach which was
+  motivated by recent results in the Statistical Mechanics of Neural Networks.
+  We present simulation results showing: 1. that the mean field Bayesian
+  evidence may be used for hyperparameter tuning and 2. that the online
+  approach may achieve a low training error fast.</p>
+
+
+
+</p>
+
+<p id="csato-opper-01">
+L.&nbsp;Csat&oacute; and M.&nbsp;Opper.
+<a href="http://books.nips.cc/papers/files/nips13/CsatoOpper.pdf"><b>Sparse
+  representation for Gaussian process models</b></a>.
+In T.&nbsp;K. Leen, T.&nbsp;G. Dietterich, and V.&nbsp;Tresp, editors, <em>Advances in Neural
+  Information Processing Systems 13</em>, Cambridge, MA, 2001. The MIT
+  Press.<p class="c"><b> Abstract:</b> We develop an approach for a sparse
+  representation for Gaussian Process (GP) models in order to overcome the
+  limitations of GPs caused by large data sets. The method is based on a
+  combination of a Bayesian online algorithm together with a sequential
+  construction of a relevant subsample of the data which fully specifies the
+  prediction of the model. Experimental results on toy examples and large
+  real-world datasets indicate that efficiency of the approach.</p>
+
+
+
+</p>
+
+<p id="csato-opper-02">
+L.&nbsp;Csat&oacute; and M.&nbsp;Opper.
+<b>Sparse online Gaussian processes</b>.
+<em>Neural Computation</em>, 14(2):641-669, 2002.<p class="c"><b>
+  Abstract:</b> We develop an approach for sparse representations of gaussian
+  process (GP) models (which are Bayesian types of kernel machines) in order to
+  overcome their limitations for large data sets. The method is based on a
+  combination of a Bayesian on-line algorithm, together with a sequential
+  construction of a relevant subsample of the data that fully specifies the
+  prediction of the GP model. By using an appealing parameterization and
+  projection techniques in a reproducing kernel Hilbert space, recursions for
+  the effective parameters and a sparse gaussian approximation of the posterior
+  process are obtained. This allows for both a propagation of predictions and
+  Bayesian error measures. The significance and robustness of our approach are
+  demonstrated on a variety of experiments.</p>
+
+
+
+</p>
+
+<p id="ferrari-trecate-opper-99">
+G.&nbsp;Ferrari&nbsp;Trecate, C.&nbsp;K.&nbsp;I. Williams, and M.&nbsp;Opper.
+<a href="http://books.nips.cc/papers/files/nips11/0218.pdf"><b>Finite-dimensional
+  approximation of Gaussian processes</b></a>.
+In M.&nbsp;S. Kearns, S.&nbsp;A. Solla, and D.&nbsp;A. Cohn, editors, <em>Advances in Neural
+  Information Processing Systems 11</em>, pages 218-224. The MIT Press,
+  1999.
+
+
+
+</p>
+
+<p id="gibbs-97">
+M.&nbsp;N. Gibbs.
+<a href="http://www.inference.phy.cam.ac.uk/mng10/GP/thesis.ps.gz"><b>Bayesian
+  Gaussian Processes for Regression and Classification</b></a>.
+PhD thesis, Department of Physics, University of Cambridge, 1997.<p
+  class="c"><b> Abstract:</b> Bayesian inference offers us a powerful tool with
+  which to tackle the problem of data modelling. However the performance of
+  Bayesian methods is crucially dependent on being able to find good models for
+  our data. The principal focus of this thesis is the development of models
+  based on Gaussian process priors. Such models, which can be thought of as the
+  infinite extension of several existing finite models have the flexibility to
+  model complex phenomena while being mathematically simple. In thesis, I
+  present a review of the theory of Gaussian processes and their covariance
+  functions and demonstrate how they fit into the Bayesian framework. The
+  efficient implementation of a Gaussian process is discussed with particular
+  reference to approximate methods for matrix inversion based on the work of
+  Skilling (1993). Several regression problems are examined. Non-stationary
+  covariance functions are developed for the regression of neuron spike data
+  and the use of Gaussian processes to model the potential energy surfaces of
+  weakly bound molecules is discussed. Classification methods based on Gaussian
+  processes are implemented using variational methods. Existing bounds
+  (Jaakkola and Jordan 1996) for the sigmoid function are used to tackle binary
+  problems and multi-dimensional bounds on the softmax function are presented
+  for the multiple class case. The performance of the variational classifier is
+  compared with that of other methods using the CRABS and PIMA datasets (Ripley
+  1996) and the problem of predicting the cracking of welds based on their
+  chemical composition is also investigated. The theoretical calculation of the
+  density of states of crystal structures is discussed in detail. Three
+  possible approaches to the problem are described based on free energy
+  minimization, Gaussian processes and the theory of random matrices. Results
+  from these approaches are compared with the state-of-the-art techniques
+  (Pickard 1997).</p>
+
+
+
+</p>
+
+<p id="gibbs-mackay-97">
+M.&nbsp;N. Gibbs and D.&nbsp;J.&nbsp;C. MacKay.
+<a href="http://www.inference.phy.cam.ac.uk/mng10/GP/gpros.ps.gz"><b>Efficient
+  implementation of Gaussian processes</b></a>.
+Technical report, Department of Physics, Cavendish Laboratory, Cambridge
+  University, 1997.<p class="c"><b> Abstract:</b> Neural networks and Bayesian
+  inference provide a useful framework within which to solve regression
+  problems. However their parameterisation means that the Bayesian analysis of
+  neural networks can be difficult. In this paper, we investigate a method for
+  regression using Gaussian Process Priors which allows exact Bayesian analysis
+  using matrix manipulation for fixed values of hyperparameters. We discuss in
+  detail the workings of the method and we detail a range of mathematical and
+  numerical techniques that are useful in applying Gaussian Processes to
+  general problems including efficient approximate matrix inversion methods
+  developed by Skilling.</p>
+
+
+
+</p>
+
+<p id="keerthi-chu-06">
+S.&nbsp;S. Keerthi and W.&nbsp;Chu.
+<a href="http://books.nips.cc/papers/files/nips18/NIPS2005_0446.pdf"><b>A
+  matching pursuit approach to sparse Gaussian process regression</b></a>.
+In <em>Advances in Neural Information Processing Systems 18</em>, 2006.<p
+  class="c"><b> Abstract:</b> In this paper we propose a new basis selection
+  criterion for building sparse GP regression models that provides promising
+  gains in accuracy as well as efficiency over previous methods. Our algorithm
+  is much faster than that of Smola and Bartlett, while, in generalization it
+  greatly outperforms the information gain approach proposed by Seeger et al,
+  especially on the quality of predictive distributions.</p>
+
+
+
+</p>
+
+<p id="lawrence-seeger-herbrich-03">
+N.&nbsp;Lawrence, M.&nbsp;Seeger, and R.&nbsp;Herbrich.
+<a href="http://books.nips.cc/papers/files/nips15/AA16.pdf"><b>Fast sparse
+  Gaussian process methods: The informative vector machine</b></a>.
+In S.&nbsp;Becker, S.&nbsp;Thrun, and K.&nbsp;Obermayer, editors, <em>Advances in Neural
+  Information Processing Systems 15</em>, pages 609-616, Cambridge, MA, 2003.
+  The MIT Press.
+
+
+
+</p>
+
+<p id="minka-01a">
+T.&nbsp;P. Minka.
+<b>A Family of Algorithms for Approximate Bayesian Inference</b>.
+PhD thesis, Department of Electrical Engineering and Computer Science, MIT,
+  2001.
+
+
+
+</p>
+
+<p id="minka-01b">
+T.&nbsp;P. Minka.
+<b>Expectation propagation for approximate Bayesian inference</b>.
+In J.&nbsp;S. Breese and D.&nbsp;Koller, editors, <em>Proceedings of the 17th Conference
+  in Uncertainty in Artificial Intelligence</em>, pages 362-369. Morgan
+  Kaufmann, 2001.
+
+
+
+</p>
+
+<p id="neal-97">
+R.&nbsp;M. Neal.
+<a href="http://www.cs.toronto.edu/~radford/ftp/mc-gp.pdf"><b>Monte Carlo
+  implementation of Gaussian process models for Bayesian regression and
+  classification</b></a>.
+Technical Report 9702, Department of Statistics, University of Toronto, 1997.<p
+  class="c"><b> Abstract:</b> Gaussian processes are a natural way of defining
+  prior distributions over functions of one or more input variables. In a
+  simple nonparametric regression problem, where such a function gives the mean
+  of a Gaussian distribution for an observed response, a Gaussian process model
+  can easily be implemented using matrix computations that are feasible for
+  datasets of up to about a thousand cases. Hyperparameters that define the
+  covariance function of the Gaussian process can be sampled using Markov chain
+  methods. Regression models where the noise has a t distribution and logistic
+  or probit models for classification applications can be implemented by
+  sampling as well for latent values underlying the observations. Software is
+  now available that implements these methods using covariance functions with
+  hierarchical parameterizations. Models defined in this way can discover
+  high-level properties of the data, such as which inputs are relevant to
+  predicting the response.</p>
+
+
+
+</p>
+
+<p id="neal-98">
+R.&nbsp;M. Neal.
+<b>Regression and classification using Gaussian process priors</b>.
+In J.&nbsp;M. Bernardo, J.&nbsp;O. Berger, A.&nbsp;P. Dawid, and A.&nbsp;F.&nbsp;M. Smith, editors,
+  <em>Bayesian Statistics 6</em>, pages 475-501. Oxford University Press,
+  1998.<p class="c"><b> Abstract:</b> Gaussian processes are a natural way of
+  specifying prior distributions over functions of one or more input variables.
+  When such a function defines the mean response in a regression model with
+  Gaussian errors, inference can be done using matrix computations, which are
+  feasible for datasets of up to about a thousand cases. The covariance
+  function of the Gaussian process can be given a hierarchical prior, which
+  allows the model to discover high-level properties of the data, such as which
+  inputs are relevant to predicting the response. Inference for these
+  covariance hyperparameters can be done using Markov chain sampling.
+  Classification models can be defined using Gaussian processes for underlying
+  latent values, which can also be sampled within the Markov chain. Gaussian
+  processes are in my view the simplest and most obvious way of defining
+  flexible Bayesian regression and classification models, but despite some past
+  usage, they appear to have been rather neglected as a general-purpose
+  technique. This may be partly due to a confusion between the properties of
+  the function being modeled and the properties of the best predictor for this
+  unknown function.</p>
+
+
+
+</p>
+
+<p id="opper-winther-00">
+M.&nbsp;Opper and O.&nbsp;Winther.
+<b>Gaussian processes for classification: Mean-field algorithms</b>.
+<em>Neural Computation</em>, 12(11):2655-2684, 2000.<p class="c"><b>
+  Abstract:</b> We derive a mean-field algorithm for binary classification with
+  gaussian processes that is based on the TAP approach originally proposed in
+  statistical physics of disordered systems. The theory also yields an
+  approximate leave-one-out estimator for the generalization error, which is
+  computed with no extra computational cost. We show that from the TAP
+  approach, it is possible to derive both a simpler "naive" mean-field theory
+  and support vector machines (SVMs) as limiting cases. For both mean-field
+  algorithms and support vector machines, simulation results for three small
+  benchmark data sets are presented. They show that one may get
+  state-of-the-art performance by using the leave-one-out estimator for model
+  selection and the built-in leave-one-out estimators are extremely precise
+  when compared to the exact leave-one-out estimate. The second result is taken
+  as strong support for the internal consistency of the mean-field
+  approach.</p>
+
+
+
+</p>
+
+<p id="opper-winther-99">
+M.&nbsp;Opper and O.&nbsp;Winther.
+<a href="http://books.nips.cc/papers/files/nips11/0309.pdf"><b>Mean field
+  methods for classification with Gaussian processes</b></a>.
+In M.&nbsp;S. Kearns, S.&nbsp;A. Solla, and D.&nbsp;A. Cohn, editors, <em>Advances in Neural
+  Information Processing Systems 11</em>, pages 309-315, Cambridge, MA, 1999.
+  The MIT Press.<p class="c"><b> Abstract:</b> We discuss the application of
+  TAP mean field methods known from the Statistical Mechanics of diordered
+  systems to Bayesian classification models with Gaussian processes. In
+  contrast to previous approaches, no knowledge about the distribution of
+  inputs is needed. Simulation results for the Sonar data set are given.</p>
+
+
+
+</p>
+
+<p id="quinonero-candela-04">
+J.&nbsp;Qui&ntilde;onero-Candela.
+<b>Learning with Uncertainty-Gaussian Processes and Relevance Vector
+  Machines</b>.
+PhD thesis, Informatics and Mathematical Modelling, Technical Univeristy of
+  Denmark, 2004.
+
+
+
+</p>
+
+<p id="quinonero-candela-rasmussen-05">
+J.&nbsp;Qui&ntilde;onero-Candela and C.&nbsp;E. Rasmussen.
+<a href="http://jmlr.csail.mit.edu/papers/volume6/quinonero-candela05a/quinonero-candela05a.pdf"><b>A
+  unifying view of sparse approximate Gaussian process regression</b></a>.
+<em>Journal of Machine Learning Research</em>, 6:1935-1959, 12 2005.<p
+  class="c"><b> Abstract:</b> We provide a new unifying view, including all
+  existing proper probabilistic sparse approximations for Gaussian process
+  regression. Our approach relies on expressing the effective prior which the
+  methods are using. This allows new insights to be gained, and highlights the
+  relationship between existing methods. It also allows for a clear
+  theoretically justified ranking of the closeness of the known approximations
+  to the corresponding full GPs. Finally we point directly to designs of new
+  better sparse approximations, combining the best of the existing strategies,
+  within attractive computational constraints.</p>
+
+<p class="c"><b> Comment:</b> Errata: there is a mistake in computational
+  complexity for taking the derivative of the log marginal likelihood wrt all
+  elements of X<sub>u</sub>, stated as O(dnm<sup>2</sup>), in line -12 on page
+  1953. A more careful derivation reduces this to O(dnm+nm<sup>2</sup>).</p>
+
+</p>
+
+<p id="quinonero-candela-wither-03">
+Joaquin Qui&ntilde;onero-Candela and Ole Winther.
+<a href="http://books.nips.cc/papers/files/nips15/AA66.pdf"><b>Incremental
+  Gaussian processes</b></a>.
+In S.&nbsp;Becker, S.&nbsp;Thrun, and K.&nbsp;Obermayer, editors, <em>Advances in Neural
+  Information Processing Systems 15</em>, Cambridge, MA, 2003. The MIT Press.
+
+
+
+</p>
+
+<p id="schwaighofer-tresp-03">
+A.&nbsp;Schwaighofer and V.&nbsp;Tresp.
+<a href="http://books.nips.cc/papers/files/nips15/AA60.pdf"><b>Transductive and
+  inductive methods for approximate Gaussian process regression</b></a>.
+In S.&nbsp;Becker, S.&nbsp;Thrun, and K.&nbsp;Obermayer, editors, <em>Advances in Neural
+  Information Processing Systems 15</em>. The MIT Press, 2003.<p
+  class="c"><b> Abstract:</b> Gaussian process regression allows a simple
+  analytical treatment of exact Bayesian inference and has been found to
+  provide good performance, yet scales badly with the number of training data.
+  In this paper we compare several approaches towards scaling Gaussian
+  processes regression to large data sets: the subset of representers method,
+  the reduced rank approximation, online Gaussian processes, and the Bayesian
+  committee machine. Furthermore we provide theoretical insight into some of
+  our experimental results. We found that subset of representers methods can
+  give good and particularly fast predictions for data sets with high and
+  medium noise levels. On complex low noise data sets, the Bayesian committee
+  machine achieves significantly better accuracy, yet at a higher computational
+  cost.</p>
+
+
+
+</p>
+
+<p id="seeger-03">
+M.&nbsp;Seeger.
+<b>Bayesian Gaussian Process Models: PAC-Bayesian Generalisation Error
+  Bounds and Sparse Approximations</b>.
+PhD thesis, Institute of Adaptive and Neural Computation, University of
+  Edinburgh, 2003.
+
+
+
+</p>
+
+<p id="seeger-williams-lawrence-03">
+M.&nbsp;Seeger, C.&nbsp;K.&nbsp;I. Williams, and N.&nbsp;Lawrence.
+<a href="http://www.kyb.tuebingen.mpg.de/bs/people/seeger/papers/aistats03-final.pdf"><b>Fast
+  forward selection to speed up sparse Gaussian process regression</b></a>.
+In C.M. Bishop and B.&nbsp;J. Frey, editors, <em>Proceedings of the Ninth
+  International Workshop on Artificial Intelligence and Statistics</em>.
+  Society for Artificial Intelligence and Statistics, 2003.
+
+
+
+</p>
+
+<p id="shen-ng-seeger-06">
+Y.&nbsp;Shen, A.&nbsp;Ng, and M.&nbsp;Seeger.
+<a href="http://books.nips.cc/papers/files/nips18/NIPS2005_0687.pdf"><b>Fast
+  Gaussian process regression using KD-trees</b></a>.
+In Y.&nbsp;Weiss, B.&nbsp;Sch&ouml;lkopf, and J.&nbsp;Platt, editors, <em>Advances in Neural
+  Information Processing Systems 18</em>, pages 1227-1234. The MIT Press,
+  Cambridge, MA, 2006.
+
+
+
+</p>
+
+<p id="smola-bartlett-01">
+A.&nbsp;J. Smola and P.&nbsp;L. Bartlett.
+<a href="http://books.nips.cc/papers/files/nips13/SmolaBartlett.pdf"><b>Sparse
+  greedy Gaussian process regression</b></a>.
+In T.&nbsp;K. Leen, T.&nbsp;G. Diettrich, and V.&nbsp;Tresp, editors, <em>Advances in Neural
+  Information Processing Systems 13</em>, pages 619-625. The MIT Press,
+  2001.
+
+
+
+</p>
+
+<p id="snelson-07">
+E.&nbsp;Snelson.
+<a href="http://www.gatsby.ucl.ac.uk/~snelson/thesis.pdf"><b>Flexible and
+  efficient Gaussian process models for machine learning</b></a>.
+PhD thesis, Gatsby Computational Neuroscience Unit, University College London,
+  2007.<p class="c"><b> Abstract:</b> Gaussian process (GP) models are widely
+  used to perform Bayesian nonlinear regression and classification—tasks that
+  are central to many machine learning problems. A GP is nonparametric, meaning
+  that the complexity of the model grows as more data points are received.
+  Another attractive feature is the behaviour of the error bars. They naturally
+  grow in regions away from training data where we have high uncertainty about
+  the interpolating function.<br> In their standard form GPs have several
+  limitations, which can be divided into two broad categories: computational
+  difficulties for large data sets, and restrictive modelling assumptions for
+  complex data sets. This thesis addresses various aspects of both of these
+  problems.<br> The training cost for a GP has O(N<sup>3</sup>) complexity,
+  where N is the number of training data points. This is due to an inversion of
+  the N × N covariance matrix. In this thesis we develop several new
+  techniques to reduce this complexity to O(NM<sup>2</sup>), where M is a user
+  chosen number much smaller than N. The sparse approximation we use is based
+  on a set of M ‘pseudo-inputs’ which are optimised together with
+  hyperparameters at training time. We develop a further approximation based on
+  clustering inputs that can be seen as a mixture of local and global
+  approximations.<br> Standard GPs assume a uniform noise variance. We use our
+  sparse approximation described above as a way of relaxing this assumption. By
+  making a modification of the sparse covariance function, we can model input
+  dependent noise. To handle high dimensional data sets we use supervised
+  linear dimensionality reduction. As another extension of the standard GP, we
+  relax the Gaussianity assumption of the process by learning a nonlinear
+  transformation of the output space. All these techniques further increase the
+  applicability of GPs to real complex data sets.<br> We present empirical
+  comparisons of our algorithms with various competing techniques, and suggest
+  problem dependent strategies to follow in practice.</p>
+
+<p class="c"><b> Comment:</b> See also the matlab implementation <a
+  href="#code">spgp</a>.</p>
+
+</p>
+
+<p id="snelson-ghahramani-06">
+E.&nbsp;Snelson and Z&nbsp;Ghahramani.
+<a href="http://books.nips.cc/papers/files/nips18/NIPS2005_0543.pdf"><b>Sparse
+  Gaussian processes using pseudo-inputs</b></a>.
+In Y.&nbsp;Weiss, B.&nbsp;Sch&ouml;lkopf, and J.&nbsp;Platt, editors, <em>Advances in Neural
+  Information Processing Systems 18</em>, pages 1259-1266. The MIT Press,
+  Cambridge, MA, 2006.<p class="c"><b> Abstract:</b> We present a new Gaussian
+  process (GP) regression model whose covariance is parameterized by the the
+  locations of M pseudo-input points, which we learn by a gradient based
+  optimization. We take M&lt;&lt;N, where N is the number of real data points,
+  and hence obtain a sparse regression method which has O(M<sup>2</sup>N)
+  training cost and O(M<sup>2</sup>) prediction cost per test case. We also
+  find hyperparameters of the covariance function in the same joint
+  optimization. The method can be viewed as a Bayesian regression model with
+  particular input dependent noise. The method turns out to be closely related
+  to several other sparse GP approaches, and we discuss the relation in detail.
+  We finally demonstrate its performance on some large data sets, and make a
+  direct comparison to other sparse GP methods. We show that our method can
+  match full GP performance with small M, i.e. very sparse solutions, and it
+  significantly outperforms other approaches in this regime.</p>
+
+
+
+</p>
+
+<p id="tresp-00">
+V.&nbsp;Tresp.
+<a href="http://www.tresp.org/papers/bcm6.pdf"><b>A Bayesian committee
+  machine</b></a>.
+<em>Neural Computation</em>, 12(11):2719-2741, 2000.<p class="c"><b>
+  Abstract:</b> The Bayesian committee machine (BCM) is a novel approach to
+  combining estimators that were trained on different data sets. Although the
+  BCM can be applied to the combination of any kind of estimators, the main
+  foci are gaussian process regression and related systems such as
+  regularization networks and smoothing splines for which the degrees of
+  freedom increase with the number of training data. Somewhat surprisingly, we
+  find that the performance of the BCM improves if several test points are
+  queried at the same time and is optimal if the number of test points is at
+  least as large as the degrees of freedom of the estimator. The BCM also
+  provides a new solution for on-line learning with potential applications to
+  data mining. We apply the BCM to systems with fixed basis functions and
+  discuss its relationship to gaussian process regression. Finally, we show how
+  the ideas behind the BCM can be applied in a non-Bayesian setting to extend
+  the input-dependent combination of estimators.</p>
+
+
+
+</p>
+
+<p id="wainwright-sudderth-willsky-01">
+M.&nbsp;J. Wainwright, E.&nbsp;B. Sudderth, and A.&nbsp;S. Willsky.
+<a href="http://books.nips.cc/papers/files/nips13/WainwrightSudderthWillsky.pdf"><b>Tree-based
+  modeling and estimation of Gaussian processes on graphs with
+  cycles</b></a>.
+In T.&nbsp;K. Leen, T.&nbsp;G. Dietterich, and V.&nbsp;Tresp, editors, <em>Advances in Neural
+  Information Processing Systems 13</em>, Cambridge, MA, 2001. The MIT Press.
+
+
+
+</p>
+
+<p id="williams-rasmussen-etal-02">
+C.&nbsp;K.&nbsp;I. Williams, C.&nbsp;E. Rasmussen, A.&nbsp;Schwaighofer, and V.&nbsp;Tresp.
+<a href="http://www.dai.ed.ac.uk/homes/ckiw/online_pubs.html"><b>Observations
+  on the Nystr&ouml;m method for Gaussian process prediction</b></a>.
+Technical report, University of Edinburgh, 2002.
+
+
+
+</p>
+
+<p id="williams-seeger-01">
+C.&nbsp;K.&nbsp;I. Williams and M.&nbsp;Seeger.
+<a href="http://books.nips.cc/papers/files/nips13/WilliamsSeeger.pdf"><b>Using
+  the Nystr&ouml;m method to speed up kernel machines</b></a>.
+In T.&nbsp;K. Leen, T.&nbsp;G. Diettrich, and V.&nbsp;Tresp, editors, <em>Advances in Neural
+  Information Processing Systems 13</em>, pages 682-688. The MIT Press,
+  2001.
+
+
+
+</p>
+
+<p id="winther-88">
+O.&nbsp;Winther.
+<b>Bayesian Mean Field Algorithms for Neural Networks and Gaussian
+  Processes</b>.
+PhD thesis, University of Copenhagen, 1988.
+
+
+
+</p>
+
+<p id="wood-jiang-tanner-02">
+S.&nbsp;A. Wood, W.&nbsp;Jiang, and M.&nbsp;Tanner.
+<b>Bayesian mixture of splines for spatially adaptive nonparametric
+  regression</b>.
+<em>Biometrika</em>, 89(3):513-528, 2002.
+
+
+
+</p>
 
 <br>
 
@@ -534,7 +2221,202 @@ been particularly well developed in geostatistics under the name of
 common terminology, and have slightly different focus from typical machine
 learning papers,
 
-<!--#include file="ref-stats.html" -->
+<p id="barry-86">
+D.&nbsp;Barry.
+<b>Nonparametric Bayesian regression</b>.
+<em>The Annals of Statistics</em>, 14(3):934-953, 1986.
+
+
+
+</p>
+
+<p id="blight-ott-75">
+B.&nbsp;J.&nbsp;N. Blight and L.&nbsp;Ott.
+<b>A Bayesian approach to model inadequacy for polynomial regression</b>.
+<em>Biometrika</em>, 62(1):79-88, 1975.
+
+
+
+</p>
+
+<p id="cressie-93">
+N.&nbsp;A.&nbsp;C. Cressie.
+<b>Statistics for Spatial Data</b>.
+John Wiley &amp; Sons, New York, 1993.
+
+
+
+</p>
+
+<p id="diggle-tawn-moyeed-98">
+P.&nbsp;J. Diggle, J.&nbsp;A. Tawn, and R.&nbsp;A. Moyeed.
+<b>Model-based geostatistics (with discussion)</b>.
+<em>Applied Statistics</em>, 47:299-350, 1998.
+
+
+
+</p>
+
+<p id="handcock-stein-93">
+M.&nbsp;S. Handcock and M.&nbsp;L. Stein.
+<b>A Bayesian analysis of kriging</b>.
+<em>Technometrics</em>, 35(4):403-410, 1993.
+
+
+
+</p>
+
+<p id="kent-mardia-94">
+J.&nbsp;T. Kent and K.&nbsp;V. Mardia.
+<b>The link between Kriging and thin-plate splines</b>.
+In F.&nbsp;P. Kelly, editor, <em>Probability, Statsitics and Optimization</em>,
+  pages 325-339. Wiley, 1994.
+
+
+
+</p>
+
+<p id="krige-51">
+D.&nbsp;G. Krige.
+<b>A statistical approach to some basic mine valuation problems on the
+  Witwatersrand</b>.
+<em>Journal of the Chemical, Metallurgical and Mining Society of South
+  Africa</em>, 52(6):119-139, 1951.
+
+
+
+</p>
+
+<p id="laslett-94">
+G.&nbsp;M. Laslett.
+<b>Kriging and splines: An empirical comparison of their predictive performance
+  in some applications</b>.
+<em>Journal of the American Statistical Association</em>, 89(426):391-409,
+  1994.
+
+
+
+</p>
+
+<p id="ohagan-78">
+A.&nbsp;O'Hagan.
+<b>Curve fitting and optimal design for prediction</b>.
+<em>Journal of the Royal Statistical Society, Series B</em>, 40(1):1-42, 1978.
+
+
+
+</p>
+
+<p id="rue-held-05">
+H.&nbsp;Rue and L.&nbsp;Held.
+<a href="http://www.math.ntnu.no/~hrue/GMRF-book"><b>Gaussian Markov Random
+  Fields: Theory and Applications</b></a>, volume 104 of <em>Monographs on
+  Statistics and Applied Probability</em>.
+Chapman &amp; Hall, London, 2005.
+
+
+
+</p>
+
+<p id="rue-martino-chopin-09">
+H.&nbsp;Rue, S.&nbsp;Martino, and N.&nbsp;Chopin.
+<a href="http://www.rss.org.uk/pdf/RueOct2008.pdf"><b>Approximate Bayesian
+  inference for latent Gaussian models by using integrated nested Laplace
+  approximations</b></a>.
+<em>Journal of the Royal Statistical Society B</em>, 71, 2009.
+PREPRINT.<p class="c"><b> Abstract:</b> Structured additive regression models
+  are perhaps the most commonly used class of models in statistical
+  applications. It includes, among others, (generalized) linear models,
+  (generalized) additive models, smoothing spline models, state space models,
+  semiparametric regression, spatial and spatiotemporal models, log-Gaussian
+  Cox processes and geostatistical and geoadditive models. We consider
+  approximate Bayesian inference in a popular subset of structured additive
+  regression models, <em>latent Gaussian models</em>, where the latent field is
+  Gaussian, controlled by a few hyperparameters and with non-Gaussian response
+  variables. The posterior marginals are not available in closed form owing to
+  the non-Gaussian response variables. For such models, Markov chain Monte
+  Carlo methods can be implemented, but they are not without problems, in terms
+  of both convergence and computational time. In some practical applications,
+  the extent of these problems is such that Markov chain Monte Carlo sampling
+  is simply not an appropriate tool for routine analysis.We show that, by using
+  an integrated nested Laplace approximation and its simplified version, we can
+  directly compute very accurate approximations to the posterior marginals. The
+  main benefit of these approximations is computational: where Markov chain
+  Monte Carlo algorithms need hours or days to run, our approximations provide
+  more precise estimates in seconds or minutes. Another advantage with our
+  approach is its generality, which makes it possible to perform Bayesian
+  analysis in an automatic, streamlined way, and to compute model comparison
+  criteria and various predictive measures so that models can be compared and
+  the model under study can be challenged.</p>
+
+
+
+</p>
+
+<p id="silverman-84">
+B.&nbsp;W. Silverman.
+<b>Spline smoothing: The equivalent variable kernel method</b>.
+<em>Annals of Statistics</em>, 12(3):898-916, 1984.
+
+
+
+</p>
+
+<p id="silverman-85">
+B.&nbsp;W. Silverman.
+<b>Some aspects of the spline smoothing approach to non-parametric regression
+  curve fitting (with discussion)</b>.
+<em>Journal of the Royal Statistical Society, Series B</em>, 47(1):1-52, 1985.
+
+
+
+</p>
+
+<p id="stein-91">
+M.&nbsp;L. Stein.
+<b>A kernel approximation to the kriging predictor of a spatial process</b>.
+<em>Ann. Inst. Statist. Math</em>, 43(1):61-75, 1991.
+
+
+
+</p>
+
+<p id="stein-99">
+M.&nbsp;L. Stein.
+<b>Interpolation of Spatial Data</b>.
+Springer, New York, 1999.
+
+
+
+</p>
+
+<p id="wahba-78">
+G.&nbsp;Wahba.
+<b>Improper priors, spline smoothing and the problem of guarding against model
+  errors in regression</b>.
+<em>Journal of the Royal Statistical Society, Series B</em>, 40:364-372, 1978.
+
+
+
+</p>
+
+<p id="yakowitz-szidarovszky-85">
+S.&nbsp;J. Yakowitz and F.&nbsp;Szidarovszky.
+<b>A comparison of kriging with nonparametric regression methods</b>.
+<em>Journal of Multivariate Analysis</em>, 16:21-53, 1985.
+
+
+
+</p>
+
+<p id="young-77">
+A.&nbsp;S. Young.
+<b>A Bayesian approach to prediction using polynomials</b>.
+<em>Biometrika</em>, 64(2):309-317, 1977.
+
+
+
+</p>
 
 <br>
 
@@ -546,31 +2428,1075 @@ function of the number of training cases. Consistency addresses the question
 whether the solution approaches the true data generating process in the limit
 of infinitely many training examples.
 
-<!--#include file="ref-cons.html" -->
+<p id="choi-schervish-04">
+T.&nbsp;Choi and M.&nbsp;J. Schervish.
+<a href="http://www.stat.cmu.edu/tr/tr809/tr809.html"><b>Posterior consistency
+  in nonparametric regression problems under Gaussian process priors</b></a>.
+Technical Report 809, Department of Statistics, CMU, 2004.
+
+
+
+</p>
+
+<p id="kakade-seeger-foster-06">
+S.&nbsp;Kakade, M.&nbsp;Seeger, and P.&nbsp;Foster.
+<a href="http://books.nips.cc/papers/files/nips18/NIPS2005_0170.pdf"><b>Worst-case
+  bounds for Gaussian process models</b></a>.
+In <em>Advances in Neural Information Processing Systems 18</em>. The MIT
+  Press, 2006.<p class="c"><b> Abstract:</b> We present a competitive analysis
+  of some non-parametric Bayesian algorithms in a worst-case online learning
+  setting, where no probabilistic assumptions about the generation of the data
+  are made. We consider models which use a Gaussian process prior (over the
+  space of all functions) and provide bounds on the regret (under the log loss)
+  for commonly used non-parametric Bayesian algorithms-including Gaussian
+  regression and logistic regression-which show how these algorithms can
+  perform favorably under rather general conditions. These bounds explicitly
+  handle the infinite dimensionality of these non-parametric classes in a
+  natural way. We also make formal connections to the minimax and minimum
+  description length (MDL) framework. Here, we show precisely how Bayesian
+  Gaussian regression is a minimax strategy.</p>
+
+
+
+</p>
+
+<p id="malzahn-opper-02">
+D.&nbsp;Malzahn and M.&nbsp;Opper.
+<a href="http://books.nips.cc/papers/files/nips14/LT25.pdf"><b>A variational
+  approach to learning curves</b></a>.
+In T.&nbsp;G. Diettrich, S.&nbsp;Becker, and Z.&nbsp;Ghahramani, editors, <em>Advances in
+  Neural Information Processing Systems 14</em>. The MIT Press, 2002.
+
+
+
+</p>
+
+<p id="opper-vivarelli-99">
+M.&nbsp;Opper and F.&nbsp;Vivarelli.
+<a href="http://books.nips.cc/papers/files/nips11/0302.pdf"><b>General bounds
+  on Bayes errors for regression with Gaussian processes</b></a>.
+In M.&nbsp;S. Kearns, S.&nbsp;A. Solla, and D.&nbsp;A. Cohn, editors, <em>Advances in Neural
+  Information Processing Systems 11</em>, pages 302-308. The MIT Press,
+  1999.
+
+
+
+</p>
+
+<p id="sollich-99">
+P.&nbsp;Sollich.
+<a href="http://www.mth.kcl.ac.uk/~psollich/papers/GaussianProcLearningCurveICANNIX.ps.gz"><b>Approximate
+  learning curves for Gaussian processes</b></a>.
+In <em>ICANN99 - Ninth International Conference on Artificial Neural
+  Networks</em>, pages 437-442, London, 1999. IEE.
+
+
+
+</p>
+
+<p id="sollich-99b">
+P.&nbsp;Sollich.
+<a href="http://books.nips.cc/papers/files/nips11/0344.pdf"><b>Learning curves
+  for Gaussian processes</b></a>.
+In M.&nbsp;S. Kearns, S.&nbsp;A. Solla, and D.&nbsp;A. Cohn, editors, <em>Neural Information
+  Processing Systems, Vol. 11</em>. The MIT Press, 1999.
+
+
+
+</p>
+
+<p id="sollich-halees-02">
+P.&nbsp;Sollich and A.&nbsp;Halees.
+<b>Learning curves for Gaussian process regression: Approximations and
+  bounds</b>.
+<em>Neural Computation</em>, 14:1393-1428, 2002.<p class="c"><b> Abstract:</b>
+  We consider the problem of calculating learning curves (i.e., average
+  generalization performance) of gaussian processes used for regression. On the
+  basis of a simple expression for the generalization error, in terms of the
+  eigenvalue decomposition of the covariance function, we derive a number of
+  approximation schemes. We identify where these become exact and compare with
+  existing bounds on learning curves; the new approximations, which can be used
+  for any input space dimension, generally get substantially closer to the
+  truth. We also study possible improvements to our approximations. Finally, we
+  use a simple exactly solvable learning scenario to show that there are limits
+  of principle on the quality of approximations and bounds expressible solely
+  in terms of the eigenvalue spectrum of the covariance function.</p>
+
+
+
+</p>
+
+<p id="steinwart-05">
+I&nbsp;Steinwart.
+<b>Consistency of support vector machines and other regularized kernel
+  classifiers</b>.
+<em>IEEE Trans. on Information Theory</em>, 51(1):128-142, 2005.
+
+
+
+</p>
+
+<p id="vaart-zanten-08">
+A.&nbsp;W. van&nbsp;der Vaart and J.&nbsp;H. van Zanten.
+<a href="http://projecteuclid.org/euclid.aos/1211819570"><b>Rates of
+  contraction of posterior distributions based on Gaussian process
+  priors</b></a>.
+<em>Annals of Statistics</em>, 36(3):1435-1463, 2008.<p class="c"><b>
+  Abstract:</b> We derive rates of contraction of posterior distributions on
+  nonparametric or semiparametric models based on Gaussian processes. The rate
+  of contraction is shown to depend on the position of the true parameter
+  relative to the reproducing kernel Hilbert space of the Gaussian process and
+  the small ball probabilities of the Gaussian process. We determine these
+  quantities for a range of examples of Gaussian priors and in several
+  statistical settings. For instance, we consider the rate of contraction of
+  the posterior distribution based on sampling from a smooth density model when
+  the prior models the log density as a (fractionally integrated) Brownian
+  motion. We also consider regression with Gaussian errors and smooth
+  classification under a logistic or probit link function combined with various
+  priors.</p>
+
+
+
+</p>
+
+<p id="williams-vivarelli-00">
+C.&nbsp;K.&nbsp;I. Williams and F.&nbsp;Vivarelli.
+<b>Upper and lower bounds on the learning curve for Gaussian proccesses</b>.
+<em>Machine Learning</em>, 40:77-102, 2000.<p class="c"><b> Abstract:</b> In
+  this paper we introduce and illustrate non-trivial upper and lower bounds on
+  the learning curves for one-dimensional Guassian Processes. The analysis is
+  carried out emphasising the effects induced on the bounds by the smoothness
+  of the random process described by the Modified Bessel and the Squared
+  Exponential covariance functions. We present an explanation of the early,
+  linearly-decreasing behavior of the learning curves and the bounds as well as
+  a study of the asymptotic behavior of the curves. The effects of the noise
+  level and the lengthscale on the tightness of the bounds are also
+  discussed.</p>
+
+
+
+</p>
 
 <br>
 
 <h3 id="rkhs">Reproducing Kernel Hilbert Spaces</h3>
 
-<!--#include file="ref-rkhs.html" -->
+<p id="aronszajn-50">
+N.&nbsp;Aronszajn.
+<b>Theory of reproducing kernels</b>.
+<em>Transactions of the American Mathematical Society</em>, 68:337-404, 1950.
+
+
+
+</p>
+
+<p id="genton-01">
+M.&nbsp;G. Genton.
+<a href="http://www.jmlr.org/papers/volume2/genton01a/genton01a.pdf"><b>Classes
+  of kernels for machine learning: A statistics perspective</b></a>.
+<em>Journal of Machine Learning Research</em>, 2:299-312, 2001.<p
+  class="c"><b> Abstract:</b> In this paper, we present classes of kernels for
+  machine learning from a statistics perspective. Indeed, kernels are positive
+  definite functions and thus also covariances. After discussing key properties
+  of kernels, as well as a new formula to construct kernels, we present several
+  important classes of kernels: anisotropic stationary kernels, isotropic
+  stationary kernels, compactly supported kernels, locally stationary kernels,
+  nonstationary kernels, and separable nonstationary kernels. Compactly
+  supported kernels and separable nonstationary kernels are of prime interest
+  because they provide a computational reduction for kernel-based methods. We
+  describe the spectral representation of the various classes of kernels and
+  conclude with a discussion on the characterization of nonlinear maps that
+  reduce nonstationary kernels to either stationarity or local
+  stationarity.</p>
+
+
+
+</p>
+
+<p id="kimeldorf-wahba-70">
+G.&nbsp;S. Kimeldorf and G.&nbsp;Wahba.
+<b>A correspondence between Bayesian estimation on stochastic processes and
+  smoothing by splines</b>.
+<em>The Annals of Mathematical Statistics</em>, 41(2):495-502, 1970.
+
+
+
+</p>
+
+<p id="wahba-90">
+G.&nbsp;Wahba.
+<b>Spline Models for Observational Data</b>, volume&nbsp;59.
+Society for Industrial and Applied Mathematics, Philadelphia, 1990.
+
+
+
+</p>
 
 <br>
 
 <h3 id="rl">Reinforcement Learning</h3>
 
-<!--#include file="ref-rl.html" -->
+<p id="deisenroth-peters-rasmussen-08">
+M.&nbsp;P. Deisenroth, J.&nbsp;Peters, and C.&nbsp;E. Rasmussen.
+<a href="http://mlg.eng.cam.ac.uk/marc/publications/acc2008_final_pub.pdf"><b>Approximate
+  Dynamic Programming with Gaussian Processes</b></a>.
+In <em>Proceedings of the 2008 American Control Conference (ACC 2008)</em>,
+  pages 4480-4485, Seattle, WA, USA, June 2008.<p class="c"><b> Abstract:</b>
+  In general, it is difficult to determine an optimal closed-loop policy in
+  nonlinear control problems with continuous-valued state and control domains.
+  Hence, approximations are often inevitable. The standard method of
+  discretizing states and controls suffers from the curse of dimensionality and
+  strongly depends on the chosen temporal sampling rate. In this paper, we
+  introduce Gaussian process dynamic programming (GPDP) and determine an
+  approximate globally optimal closed-loop policy. In GPDP, value functions in
+  the Bellman recursion of the dynamic programming algorithm are modeled using
+  Gaussian processes. GPDP returns an optimal state-feedback for a finite set
+  of states. Based on these outcomes, we learn a possibly discontinuous
+  closed-loop policy on the entire state space by switching between two
+  independently trained Gaussian processes. A binary classifier selects one
+  Gaussian process to predict the optimal control signal. We show that GPDP is
+  able to yield an almost optimal solution to an LQ problem using few sample
+  points. Moreover, we successfully apply GPDP to the underpowered pendulum
+  swing up, a complex nonlinear control problem.</p>
+
+
+
+</p>
+
+<p id="deisenroth-rasmussen-peters-08">
+M.&nbsp;P. Deisenroth, C.&nbsp;E. Rasmussen, and J.&nbsp;Peters.
+<a href="http://mlg.eng.cam.ac.uk/marc/./publications/esann2008_final_pub.pdf"><b>Model-Based
+  Reinforcement Learning with Continuous States and Actions</b></a>.
+In <em>Proceedings of the 16th European Symposium on Artificial Neural Networks
+  (ESANN 2008)</em>, pages 19-24, Bruges, Belgium, April 2008.<p class="c"><b>
+  Abstract:</b> Finding an optimal policy in a reinforcement learning (RL)
+  framework with continuous state and action spaces is challenging. Approximate
+  solutions are often inevitable. GPDP is an approximate dynamic programming
+  algorithm based on Gaussian process (GP) models for the value functions. In
+  this paper, we extend GPDP to the case of unknown transition dynamics. After
+  building a GP model for the transition dynamics, we apply GPDP to this model
+  and determine a continuous-valued policy in the entire state space. We apply
+  the resulting controller to the underpowered pendulum swing up. Moreover, we
+  compare our results on this RL task to a nearly optimal discrete DP solution
+  in a fully known environment.</p>
+
+
+
+</p>
+
+<p id="deisenroth-rasmussen-peters-09">
+M.&nbsp;P. Deisenroth, C.&nbsp;E. Rasmussen, and J.&nbsp;Peters.
+<a href="http://mlg.eng.cam.ac.uk/marc/publications/neurocomputing2009_preprint.pdf"><b>Gaussian
+  Process Dynamic Programming</b></a>.
+<em>Neurocomputing</em>, 72(7-9):1508-1524, March 2009.<p class="c"><b>
+  Abstract:</b> Reinforcement learning (RL) and optimal control of systems with
+  continuous states and actions require approximation techniques in most
+  interesting cases. In this article, we introduce Gaussian process dynamic
+  programming (GPDP), an approximate value-function based RL algorithm. We
+  consider both a classic optimal control problem, where problem-specific prior
+  knowledge is available, and a classic RL problem, where only very general
+  priors can be used. For the classic optimal control problem, GPDP models the
+  unknown value functions with Gaussian processes and generalizes dynamic
+  programming to continuous-valued states and actions. For the RL problem, GPDP
+  starts from a given initial state and explores he state space using Bayesian
+  active learning. To design a fast learner, available data has to be used
+  efficiently. Hence, we propose to learn probabilistic models of the a priori
+  unknown transition dynamics and the value functions on the fly. In both
+  cases, we successfully apply the resulting continuous-valued controllers to
+  the under-actuated pendulum swing up and analyze the performances of the
+  suggested algorithms. It turns out that GPDP uses data very efficiently and
+  can be applied to problems, where classic dynamic programming would be
+  cumbersome.</p>
+
+
+
+</p>
+
+<p id="engel-05a">
+Y.&nbsp;Engel.
+<a href="http://www.cs.ualberta.ca/~yaki/papers/thesis.pdf"><b>Algorithms and
+  Representations for Reinforcement Learning</b></a>.
+PhD thesis, Hebrew University, Jerusalem, Israel, April 2005.<p class="c"><b>
+  Abstract:</b> Machine Learning is a field of research aimed at constructing
+  intelligent machines that gain and improve their skills by learning and
+  adaptation. As such, Machine Learning research addresses several classes of
+  learning problems, including for instance, supervised and unsupervised
+  learning. Arguably, the most ubiquitous and realistic class of learning
+  problems, faced by both living creatures and artificial agents, is known as
+  Reinforcement Learning. Reinforcement Learning problems are characterized by
+  a long-term interaction between the learning agent and a dynamic, unfamiliar,
+  uncertain, possibly even hostile environment. Mathematically, this
+  interaction is modeled as a Markov Decision Process (MDP). Probably the most
+  significant contribution of this thesis is in the introduction of a new class
+  of Reinforcement Learning algorithms, which leverage the power of a
+  statistical set of tools known as Gaussian Processes. This new approach to
+  Reinforcement Learning offers viable solutions to some of the major
+  limitations of current Reinforcement Learning methods, such as the lack of
+  confidence intervals for performance predictions, and the difficulty of
+  appropriately reconciling exploration with exploitation. Analysis of these
+  algorithms and their relationship with existing methods also provides us with
+  new insights into the assumptions underlying some of the most popular
+  Reinforcement Learning algorithms to date.</p>
+
+
+
+</p>
+
+<p id="engel-mannor-meir-03">
+Y.&nbsp;Engel, S.&nbsp;Mannor, and R.&nbsp;Meir.
+<a href="http://www.hpl.hp.com/conferences/icml2003/papers/306.pdf"><b>Bayes
+  meets Bellman: The Gaussian process approach to temporal difference
+  learning</b></a>.
+In T.&nbsp;Fawcett and N.&nbsp;Mishra, editors, <em>20th International Conference on
+  Machine Learning</em>. AAAI Press, 2003.<p class="c"><b> Abstract:</b> We
+  present a novel Bayesian approach to the problem of value function estimation
+  in con- tinuous state spaces. We derne a probabilistic generative model for
+  the value function by imposing a Gaussian prior over value functions and
+  assuming a Gaussian noise model. Due to the Gaussian nature of the random
+  processes involved, the posterior distribution of the value function is also
+  Gaussian and is therefore described entirely by its mean and covariance. We
+  derive exact expressions for the posterior process moments, and utilizing an
+  ecient sequential sparsfication method, we describe an on-line algorithm for
+  learning them. We demonstrate the operation of the algorithm on a
+  2-dimensional continuous spatial navigation domain.</p>
+
+
+
+</p>
+
+<p id="engel-mannor-meir-05">
+Y.&nbsp;Engel, S.&nbsp;Mannor, and R.&nbsp;Meir.
+<a href="http://www.machinelearning.org/proceedings/icml2005/papers/026_Reinforcement_EngelEtAl.pdf"><b>Reinforcement
+  learning with Gaussian processes</b></a>.
+In <em>22nd International Conference on Machine Learning</em>, pages 201-208,
+  Bonn, Germany, August 2005.<p class="c"><b> Abstract:</b> Gaussian Process
+  Temporal Difference (GPTD) learning offers a Bayesian solution to the policy
+  evaluation problem of reinforcement learning. In this paper we extend the
+  GPTD framework by addressing two pressing issues, which were not adequately
+  treated in the original GPTD paper <a href="#engel-mannor-meir-03">Engel et
+  al., 2003</a>. The first is the issue of stochasticity in the state
+  transitions, and the second is concerned with action selection and policy
+  improvement. We present a new generative model for the value function,
+  deduced from its relation with the discounted return. We derive a
+  corresponding on-line algorithm for learning the posterior moments of the
+  value Gaussian process. We also present a SARSA based extension of GPTD,
+  termed GPSARSA, that allows the selection of actions and the gradual
+  improvement of policies without requiring a world-model.</p>
+
+
+
+</p>
+
+<p id="engel-szabo-volkinshtein-06">
+Y.&nbsp;Engel, P.&nbsp;Szabo, and D.&nbsp;Volkinshtein.
+<a href="http://books.nips.cc/papers/files/nips18/NIPS2005_0746.pdf"><b>Learning
+  to control an octopus arm with Gaussian process temporal difference
+  methods</b></a>.
+In Y.&nbsp;Weiss, B.&nbsp;Sch&ouml;lkopf, and J.&nbsp;C. Platt, editors, <em>Advances in Neural
+  Information Processing Systems 18</em>, pages 347-354, Cambridge, MA,
+  U.S.A., 2006. The MIT Press.<p class="c"><b> Abstract:</b> The Octopus arm
+  is a highly versatile and complex limb. How the Octopus controls such a
+  hyper-redundant arm (not to mention eight of them!) is as yet unknown.
+  Robotic arms based on the same mechanical principles may render present day
+  robotic arms obsolete. In this paper, we tackle this control problem using an
+  online reinforcement learning algorithm, based on a Bayesian approach to
+  policy evaluation known as Gaussian process temporal difference (GPTD)
+  learning. Our substitute for the real arm is a computer simulation of a
+  2-dimensional model of an Octopus arm. Even with the simplifications inherent
+  to this model, the state space we face is a high-dimensional one. We apply a
+  GPTDbased algorithm to this domain, and demonstrate its operation on several
+  learning tasks of varying degrees of difficulty.</p>
+
+
+
+</p>
+
+<p id="ghavamzadeh-engel-07">
+M.&nbsp;Ghavamzadeh and Y.&nbsp;Engel.
+<a href="http://books.nips.cc/papers/files/nips19/NIPS2006_0865.pdf"><b>Bayesian
+  policy gradient algorithms</b></a>.
+In B.&nbsp;Sch&ouml;lkopf, J.&nbsp;C. Platt, and T.&nbsp;Hoffman, editors, <em>Advances in
+  Neural Information Processing Systems 19</em>, pages 457-464, Cambridge, MA,
+  U.S.A., 2007. The MIT Press.<p class="c"><b> Abstract:</b> Policy gradient
+  methods are reinforcement learning algorithms that adapt a parameterized
+  policy by following a performance gradient estimate. Conventional policy
+  gradient methods use Monte-Carlo techniques to estimate this gradient. Since
+  Monte Carlo methods tend to have high variance, a large number of samples is
+  required, resulting in slow convergence. In this paper, we propose a Bayesian
+  framework that models the policy gradient as a Gaussian process. This reduces
+  the number of samples needed to obtain accurate gradient estimates. Moreover,
+  estimates of the natural gradient as well as a measure of the uncertainty in
+  the gradient estimates are provided at little extra cost.</p>
+
+
+
+</p>
+
+<p id="ghavamzadeh-engel-07a">
+M.&nbsp;Ghavamzadeh and Y.&nbsp;Engel.
+<a href="http://www.machinelearning.org/proceedings/icml2007/papers/458.pdf"><b>Bayesian
+  actor-critic algorithms</b></a>.
+In <em>24th International Conference on Machine Learning</em>, pages 297-304,
+  Corvallis, OR, U.S.A., June 2007.<p class="c"><b> Abstract:</b> We present a
+  new actor-critic learning model in which a Bayesian class of non-parametric
+  critics, using Gaussian process temporal difference learning is used. Such
+  critics model the state-action value function as a Gaussian process, allowing
+  Bayes' rule to be used in computing the posterior distribution over
+  state-action value functions, conditioned on the observed data. Appropriate
+  choices of the prior covariance (kernel) between state-action values and of
+  the parametrization of the policy allow us to obtain closed-form expressions
+  for the posterior distribution of the gradient of the average discounted
+  return with respect to the policy parameters. The posterior mean, which
+  serves as our estimate of the policy gradient, is used to update the policy,
+  while the posterior covariance allows us to gauge the reliability of the
+  update.</p>
+
+
+
+</p>
+
+<p id="ko-klein-fox-etal-07a">
+J.&nbsp;Ko, D.&nbsp;J. Klein, D.&nbsp;Fox, and D.&nbsp;Haehnel.
+<a href="http://www.cs.washington.edu/homes/fox/postscripts/gp-blimp-icra-07.pdf"><b>Gaussian
+  Processes and Reinforcement Learning for Identification and Control of an
+  Autonomous Blimp</b></a>.
+In <em>Proceedings of the International Conference on Robotics and Automation
+  (ICRA)</em>, pages 742-747, Rome, Italy, April 2007.<p class="c"><b>
+  Abstract:</b> Blimps are a promising platform for aerial robotics and have
+  been studied extensively for this purpose. Unlike other aerial vehicles,
+  blimps are relatively safe and also possess the ability to loiter for long
+  periods. These advantages, however, have been difficult to exploit because
+  blimp dynamics are complex and inherently non-linear. The classical approach
+  to system modeling represents the system as an ordinary differential equation
+  (ODE) based on Newtonian principles. A more recent modeling approach is based
+  on representing state transitions as a Gaussian process (GP). In this paper,
+  we present a general technique for system identification that combines these
+  two modeling approaches into a single formulation. This is done by training a
+  Gaussian process on the residual between the non-linear model and ground
+  truth training data. The result is a GP-enhanced model that provides an
+  estimate of uncertainty in addition to giving better state predictions than
+  either ODE or GP alone. We show how the GP-enhanced model can be used in
+  conjunction with reinforcement learning to generate a blimp controller that
+  is superior to those learned with ODE or GP models alone.</p>
+
+
+
+</p>
+
+<p id="kocijan-etal-03">
+J.&nbsp;Kocijan, R.&nbsp;Murray-Smith, C.&nbsp;E. Rasmussen, and B.&nbsp;Likar.
+<a href="http://www.kyb.mpg.de/publications/pdfs/pdf2283.pdf"><b>Predictive
+  control with Gaussian process models</b></a>.
+In B.&nbsp;Zajc and M.&nbsp;Tkal, editors, <em>Proceedings of IEEE Region 8 Eurocon 2003:
+  Computer as a Tool</em>, pages 352-356, Piscataway, 2003. IEEE.<p
+  class="c"><b> Abstract:</b> This paper describes model-based predictive
+  control based on Gaussian processes.Gaussian process models provide a
+  probabilistic non-parametric modelling approach for black-box identification
+  of non-linear dynamic systems. It offers more insight in variance of obtained
+  model response, as well as fewer parameters to determine than other models.
+  The Gaussian processes can highlight areas of the input space where
+  prediction quality is poor, due to the lack of data or its complexity, by
+  indicating the higher variance around the predicted mean. This property is
+  used in predictive control, where optimisation of control signal takes the
+  variance information into account. The predictive control principle is
+  demonstrated on a simulated example of nonlinear system.</p>
+
+
+
+</p>
+
+<p id="rasmussen-deisenroth-08">
+C.&nbsp;E. Rasmussen and M.&nbsp;P. Deisenroth.
+<a href="http://mlg.eng.cam.ac.uk/marc/./publications/ewrl2008_final_pub.pdf"><b>Probabilistic
+  Inference for Fast Learning in Control</b></a>.
+In S.&nbsp;Girgin, M.&nbsp;Loth, R.&nbsp;Munos, P.&nbsp;Preux, and D.&nbsp;Ryabko, editors, <em>Recent
+  Advances in Reinforcement Learning</em>, volume 5323 of <em>Lecture Notes in
+  Computer Science</em>, pages 229-242. Springer-Verlag, November 2008.<p
+  class="c"><b> Abstract:</b> We provide a novel framework for very fast
+  model-based reinforcement learning in continuous state and action spaces. The
+  framework requires probabilistic models that explicitly characterize their
+  levels of confidence. Within this framework, we use flexible, non-parametric
+  models to describe the world based on previously collected experience. We
+  demonstrate learning on the cart-pole problem in a setting where we provide
+  very limited prior knowledge about the task. Learning progresses rapidly, and
+  a good policy is found after only a hand-full of iterations.</p>
+
+
+
+</p>
+
+<p id="rasmussen-kuss-04">
+C.&nbsp;E. Rasmussen and M.&nbsp;Kuss.
+<a href="http://books.nips.cc/papers/files/nips16/NIPS2003_CN01.pdf"><b>Gaussian
+  processes in reinforcement learning</b></a>.
+In S.&nbsp;Thrun, L.&nbsp;Saul, and B.&nbsp;Sch&ouml;lkopf, editors, <em>Advances in Neural
+  Information Processing Systems 16</em>. The MIT Press, Cambridge, MA,
+  2004.<p class="c"><b> Abstract:</b> We exploit some useful properties of
+  Gaussian process (GP) regression models for reinforcement learning in
+  continuous state spaces and discrete time. We demonstrate how the GP model
+  allows evaluation of the value function in closed form. The resulting policy
+  iteration algorithm is demonstrated on a simple problem with a two
+  dimensional state space. Further, we speculate that the intrinsic ability of
+  GP models to characterise distributions of functions would allow the method
+  to capture entire distributions over future values instead of merely their
+  expectation, which has traditionally been the focus of much of reinforcement
+  learning.</p>
+
+
+
+</p>
 
 <br>
 
 <h3 id="gplvm">Gaussian Process Latent Variable Models (GP-LVM)</h3>
 
-<!--#include file="ref-gplvm.html" -->
+<p id="lawrence-04">
+N.&nbsp;Lawrence.
+<a href="http://books.nips.cc/papers/files/nips16/NIPS2003_AA42.pdf"><b>Gaussian
+  process latent variable models for visualization of high dimensional
+  data</b></a>.
+In S.&nbsp;Thrun, L.&nbsp;Saul, and B.&nbsp;Sch&ouml;lkopf, editors, <em>Advances in Neural
+  Information Processing Systems 16</em>, pages 329-336. The MIT Press,
+  2004.<p class="c"><b> Abstract:</b> In this paper we introduce a new
+  underlying probabilistic model for principal component analysis (PCA). Our
+  formulation interprets PCA as a particular Gaussian process prior on a
+  mapping from a latent space to the observed data-space. We show that if the
+  prior’s covariance function constrains the mappings to be linear the model
+  is equivalent to PCA, we then extend the model by considering less
+  restrictive covariance functions which allow non-linear mappings. This more
+  general Gaussian process latent variable model (GPLVM) is then evaluated as
+  an approach to the visualisation of high dimensional data for three different
+  data-sets. Additionally our non-linear algorithm can be further kernelised
+  leading to ‘twin kernel PCA’ in which a <em>mapping between feature
+  spaces</em> occurs.</p>
+
+
+
+</p>
+
+<p id="lawrence-05">
+N.&nbsp;Lawrence.
+<a href="http://www.jmlr.org/papers/volume6/lawrence05a/lawrence05a.pdf"><b>Probabilistic
+  non-linear principal component analysis with Gaussian process latent
+  variable models</b></a>.
+<em>Journal of Machine Learning Research</em>, 6:1783-1816, 2005.<p
+  class="c"><b> Abstract:</b> Summarising a high dimensional data set with a
+  low dimensional embedding is a standard approach for exploring its structure.
+  In this paper we provide an overview of some existing techniques for
+  discovering such embeddings. We then introduce a novel probabilistic
+  interpretation of principal component analysis (PCA) that we term dual
+  probabilistic PCA (DPPCA). The DPPCA model has the additional advantage that
+  the linear mappings from the embedded space can easily be non-linearised
+  through Gaussian processes. We refer to this model as a Gaussian process
+  latent variable model (GP-LVM). Through analysis of the GP-LVM objective
+  function, we relate the model to popular spectral techniques such as kernel
+  PCA and multidimensional scaling. We then review a practical algorithm for
+  GP-LVMs in the context of large data sets and develop it to also handle
+  discrete valued data and missing attributes. We demonstrate the model on a
+  range of real-world and artificially generated data sets.</p>
+
+
+
+</p>
+
+<p id="urtasun-darrell-07">
+R.&nbsp;Urtasun and T.&nbsp;Darrell.
+<a href="http://people.csail.mit.edu/rurtasun/publications/icml_urtasun_darrell.pdf"><b>Discriminative
+  Gaussian process latent variable model for classification</b></a>.
+In <em>24th International Conference on Machine Learning</em>, 2007.<p
+  class="c"><b> Abstract:</b> Supervised learning is dicult with high
+  dimensional input spaces and very small training sets, but accurate
+  classcation may be possible if the data lie on a low-dimensional manifold.
+  Gaussian Process Latent Variable Models can discover low dimensional
+  manifolds given only a small number of examples, but learn a latent space
+  without regard for class labels. Existing methods for discriminative manifold
+  learning (e.g., LDA, GDA) do constrain the class distribution in the latent
+  space, but are generally deterministic and may not generalize well with
+  limited training data. We introduce a method for Gaussian Process Classcation
+  using latent variable models trained with discriminative priors over the
+  latent space, which can learn a discriminative latent space from a small
+  training set.</p>
+
+
+
+</p>
+
+<p id="wang-fleet-hertzmann-06">
+J.&nbsp;Wang, D.&nbsp;Fleet, and A.&nbsp;Hertzmann.
+<a href="http://books.nips.cc/papers/files/nips18/NIPS2005_0548.pdf"><b>Gaussian
+  process dynamical models</b></a>.
+In Y.&nbsp;Weiss, B.&nbsp;Sch&ouml;lkopf, and J.&nbsp;Platt, editors, <em>Advances in Neural
+  Information Processing Systems 18</em>, pages 1443-1450. The MIT Press,
+  Cambridge, MA, 2006.<p class="c"><b> Abstract:</b> This paper introduces
+  Gaussian Process Dynamical Models (GPDM) for nonlinear time series analysis.
+  A GPDM comprises a low-dimensional latent space with associated dynamics, and
+  a map from the latent space to an observation space. We marginalize out the
+  model parameters in closed-form, using Gaussian Process (GP) priors for both
+  the dynamics and the observation mappings. This results in a nonparametric
+  model for dynamical systems that accounts for uncertainty in the model. We
+  demonstrate the approach on human motion capture data in which each pose is
+  62-dimensional. Despite the use of small data sets, the GPDM learns an
+  effective representation of the nonlinear dynamics in these spaces.</p>
+
+<p class="c"><b> Comment:</b> Web page <a
+  href="http://www.dgp.toronto.edu/~jmwang/gpdm">http://www.dgp.toronto.edu/~jmwang/gpdm</a>.</p>
+
+</p>
 
 <br>
 
 <h3 id="appl">Applications</h3>
 
-<!--#include file="ref-appl.html" -->
+<p id="archambeau-07">
+C.&nbsp;Archambeau, D.&nbsp;Cornford, M.&nbsp;Opper, and J.&nbsp;Shawe-Taylor.
+<a href="http://jmlr.csail.mit.edu/proceedings/papers/v1/archambeau07a/archambeau07a.pdf"><b>Gaussian
+  process approximations of stochastic differential equations</b></a>.
+In <em>JMLR: Workshop and Conference Proceedings</em>, 2007.<p class="c"><b>
+  Abstract:</b> Stochastic differential equations arise naturally in a range of
+  contexts, from financial to environmental modeling. Current solution methods
+  are limited in their representation of the posterior process in the presence
+  of data. In this work, we present a novel Gaussian process approximation to
+  the posterior measure over paths for a general class of stochastic
+  differential equations in the presence of observations. The method is applied
+  to two simple problems: the Ornstein-Uhlenbeck process, of which the exact
+  solution is known and can be compared to, and the double-well system, for
+  which standard approaches such as the ensemble Kalman smoother fail to
+  provide a satisfactory result. Experiments show that our variational
+  approximation is viable and that the results are very promising as the
+  variational approximate solution outperforms standard Gaussian process
+  regression for non-Gaussian Markov processes.</p>
+
+
+
+</p>
+
+<p id="bailer-jones-irwin-etal-97">
+C.&nbsp;A.&nbsp;L. Bailer-Jones, T.&nbsp;J. Sabin, D.&nbsp;J.&nbsp;C. MacKay, and P.&nbsp;J. Withers.
+<a href="http://www.mpia-hd.mpg.de/homes/calj/IPMM97.pdf"><b>Prediction of
+  deformed and annealed microstructures using Bayesian neural networks and
+  Gaussian processes</b></a>.
+In T.&nbsp;Chandra, S.&nbsp;R. Leclair, J.&nbsp;A. Meech, B.&nbsp;Verma, M.&nbsp;Smith, and
+  B.&nbsp;Balachandran, editors, <em>Proceedings of the Australasia Pacific Forum on
+  Intelligent Processing and Manufacturing of Materials (IPMM97)</em>,
+  Brisbane, 1997. Watson Ferguson & Co.<p class="c"><b> Abstract:</b> The
+  forming of metals is important in many manufacturing industries. It has long
+  been known that microstructure and texture affect the properties of a
+  material, but to date limited progress has been made in predicting
+  microstructural development during thermomechanical forming due to the
+  complexity of the relationship between microstructure and local deformation
+  conditions. In this paper we investigate the utility of non-linear
+  interpolation models, in particular Gaussian processes, to model the
+  development of microstructure during thermomechanical processing of metals.
+  We adopt a Bayesian approach which allows: (1) automatic control of the
+  complexity of the non-linear model; (2) calculation of error bars describing
+  the reliability of the model predictions; (3) automatic determination of the
+  relevance of the various input variables. Although this method is not
+  intelligent in that it does not attempt to provide a fundamental
+  understanding of the underlying micromechanical deformation processes, it can
+  lead to empirical relations that predict microstructure as a function of
+  deformation and heat treatments. These can easily be incorporated into
+  existing Finite Element forging design tools. Future work will examine the
+  use of these models in reverse to guide the definition of deformation
+  processes aimed at delivering the required microstructures. In order to
+  thoroughly train and test a Gaussian Process or neural network model, a large
+  amount of representative experimental data is required. Initial experimental
+  work has focused on an Al-1%Mg alloy deformed in non-uniform cold compression
+  followed by different annealing treatments to build up a set of
+  microstructural data brought about by a range of processing conditions. The
+  DEFORM Finite Element modelling package has been used to calculate the local
+  effective strain as a function of position across the samples. This is
+  correlated with measurements of grain areas to construct the data set with
+  which to develop the model.</p>
+
+
+
+</p>
+
+<p id="chu-et-al-05">
+W.&nbsp;Chu, Z.&nbsp;Ghahramani, F.&nbsp;Falciani, and D.&nbsp;L. Wild.
+<a href="http://bioinformatics.oxfordjournals.org/cgi/reprint/bti526?ijkey=xoHPtTsiEzzTvfT&keytype=ref"><b>Biomarker
+  discovery in microarray gene expression data with Gaussian
+  processes</b></a>.
+<em>Bioinformatics</em>, 21(16):3385-3393, 2005.<p class="c"><b> Abstract:</b>
+  Motivation: In clinical practice, pathological phenotypes are often labelled
+  with ordinal scales rather than binary, e.g. the Gleason grading system for
+  tumor cell differentiation. However, in the literature of microarray
+  analysis, these ordinal labels have been rarely treated in a principled way.
+  This paper describes a gene selection algorithm based on Gaussian processes
+  to discover consistent gene expression patterns associated with ordinal
+  clinical phenotypes. The technique of automatic relevance determination is
+  applied to represent the significance level of the genes in a Bayesian
+  inference framework. Results: The usefulness of the proposed algorithm for
+  ordinal labels is demonstrated by the gene expression signature associated
+  with the Gleason score for prostate cancer data. Our results demonstrate how
+  multi-gene markers that may be initially developed with a diagnostic or
+  prognostic application in mind are also useful as an investigative tool to
+  reveal associations between specific molecular and cellular events and
+  features of tumor physiology. Our algorithm can also be applied to microarray
+  data with binary labels with results comparable to other methods in the
+  literature. Availability: The source code was written in ANSI C, which is
+  accessible at <a
+  href="http://www.gatsby.ucl.ac.uk/~chuwei/code/gpgenes.tar">www.gatsby.ucl.ac.uk/~chuwei/code/gpgenes.tar</a>.</p>
+
+
+
+</p>
+
+<p id="chu-sindwhani-06">
+W.&nbsp;Chu, S.&nbsp;Sindwhani, Z.&nbsp;Ghahramani, and S.&nbsp;S. Keerthi.
+<a href="http://books.nips.cc/papers/files/nips19/NIPS2006_0676.pdf"><b>Relational
+  learning with Gaussian processes</b></a>.
+In <em>Advances in Neural Information Processing Systems 18</em>, 2006.<p
+  class="c"><b> Abstract:</b> Correlation between instances is often modelled
+  via a kernel function using input attributes of the instances. Relational
+  knowledge can further reveal additional pairwise correlations between
+  variables of interest. In this paper, we develop a class of models which
+  incorporates both reciprocal relational information and input attributes
+  using Gaussian process techniques. This approach provides a novel
+  non-parametric Bayesian framework with a data-dependent covariance function
+  for supervised learning tasks. We also apply this framework to
+  semi-supervised learning. Experimental results on several real world data
+  sets verify the usefulness of this algorithm.</p>
+
+
+
+</p>
+
+<p id="cunningham-shenoy-sahani-08">
+J.&nbsp;P. Cunningham, K.&nbsp;V. Shenoy, and M.&nbsp;Sahani.
+<a href="http://icml2008.cs.helsinki.fi/papers/151.pdf"><b>Fast Gaussian
+  process methods for point process intensity estimation</b></a>.
+In Andrew McCallum and Sam Roweis, editors, <em>25th International Conference
+  on Machine Learning</em>, pages 192-199. Omnipress, 2008.<p class="c"><b>
+  Abstract:</b> Point processes are difficult to analyze because they provide
+  only a sparse and noisy observation of the intensity function driving the
+  process. Gaussian Processes offer an attractive framework within which to
+  infer underlying intensity functions. The result of this inference is a
+  continuous function defined across time that is typically more amenable to
+  analytical efforts. However, a naive implementation will become
+  computationally infeasible in any problem of reasonable size, both in memory
+  and run time requirements. We demonstrate problem specific methods for a
+  class of renewal processes that eliminate the memory burden and reduce the
+  solve time by orders of magnitude.</p>
+
+
+
+</p>
+
+<p id="eichhorn-tolias-etal-04">
+J.&nbsp;Eichhorn, A.&nbsp;Tolias, A.&nbsp;Zien, M.&nbsp;Kuss, C.&nbsp;E. Rasmussen, J.&nbsp;Weston,
+  N.&nbsp;Logothetis, and B.&nbsp;Sch&ouml;lkopf.
+<a href="http://books.nips.cc/papers/files/nips16/NIPS2003_NS16.pdf"><b>Prediction
+  on spike data using kernel algorithms</b></a>.
+In S.&nbsp;Thrun, L.&nbsp;Saul, and B.&nbsp;Sch&ouml;lkopf, editors, <em>Advances in Neural
+  Information Processing Systems 16</em>, Cambridge, MA, 2004. The MIT
+  Press.<p class="c"><b> Abstract:</b> We report and compare the performance of
+  different learning algorithms based on data from cortical recordings. The
+  task is to predict the orientation of visual stimuli from the activity of a
+  population of simultaneously recorded neurons. We compare several ways of
+  improving the coding of the input (i.e., the spike data) as well as of the
+  output (i.e., the orientation), and report the results obtained using
+  different kernel algorithms.</p>
+
+
+
+</p>
+
+<p id="ko-fox-08">
+J.&nbsp;Ko and D.&nbsp;Fox.
+<a href="http://www.cs.washington.edu/homes/fox/postscripts/gp-bayesfilter-iros-08.pdf"><b>GP-BayesFilters:
+  Bayesian Filtering Using Gaussian Process Prediction and Observation
+  Models</b></a>.
+In <em>Proceedings of the 2008 IEEE/RSJ International Conference on Intelligent
+  Robots and Systems (IROS)</em>, pages 3471-3476, Nice, France, September
+  2008.<p class="c"><b> Abstract:</b> Bayesian filtering is a general framework
+  for recursively estimating the state of a dynamical system. The most common
+  instantiations of Bayes filters are Kalman filters (extended and unscented)
+  and particle filters. Key components of each Bayes filter are probabilistic
+  prediction and observation models. Recently, Gaussian processes have been
+  introduced as a non-parametric technique for learning such models from
+  training data. In the context of unscented Kalman filters, these models have
+  been shown to provide estimates that can be superior to those achieved with
+  standard, parametric models. In this paper we show how Gaussian process
+  models can be integrated into other Bayes filters, namely particle filters
+  and extended Kalman filters. We provide a complexity analysis of these
+  filters and evaluate the alternative techniques using data collected with an
+  autonomous micro-blimp.</p>
+
+
+
+</p>
+
+<p id="ko-klein-fox-etal-07">
+J.&nbsp;Ko, D.&nbsp;J. Klein, D.&nbsp;Fox, and D.&nbsp;Haehnel.
+<a href="http://www.cs.washington.edu/homes/fox/postscripts/gp-ukf-iros-07.pdf"><b>GP-UKF:
+  Unscented Kalman Filters with Gaussian Process Prediction and Observation
+  Models</b></a>.
+In <em>Proceedings of the 2007 IEEE/RSJ International Conference on Intelligent
+  Robots and Systems</em>, pages 1901-1907, San Diego, CA, USA, October
+  2007.<p class="c"><b> Abstract:</b> This paper considers the use of
+  non-parametric system models for sequential state estimation. In particular,
+  motion and observation models are learned from training examples using
+  Gaussian Process (GP) regression. The state estimator is an Unscented Kalman
+  Filter (UKF). The resulting GP-UKF algorithm has a number of advantages over
+  standard (parametric) UKFs. These include the ability to estimate the state
+  of arbitrary nonlinear systems, improved tracking quality compared to a
+  parametric UKF, and graceful degradation with increased model uncertainty.
+  These advantages stem from the fact that GPs consider both the noise in the
+  system and the uncertainty in the model. If an approximate parametric model
+  is available, it can be incorporated into the GP; resulting in further
+  performance improvements. In experiments, we show how the GP-UKF algorithm
+  can be applied to the problem of tracking an autonomous micro-blimp.</p>
+
+
+
+</p>
+
+<p id="ko-klein-fox-etal-07a">
+J.&nbsp;Ko, D.&nbsp;J. Klein, D.&nbsp;Fox, and D.&nbsp;Haehnel.
+<a href="http://www.cs.washington.edu/homes/fox/postscripts/gp-blimp-icra-07.pdf"><b>Gaussian
+  Processes and Reinforcement Learning for Identification and Control of an
+  Autonomous Blimp</b></a>.
+In <em>Proceedings of the International Conference on Robotics and Automation
+  (ICRA)</em>, pages 742-747, Rome, Italy, April 2007.<p class="c"><b>
+  Abstract:</b> Blimps are a promising platform for aerial robotics and have
+  been studied extensively for this purpose. Unlike other aerial vehicles,
+  blimps are relatively safe and also possess the ability to loiter for long
+  periods. These advantages, however, have been difficult to exploit because
+  blimp dynamics are complex and inherently non-linear. The classical approach
+  to system modeling represents the system as an ordinary differential equation
+  (ODE) based on Newtonian principles. A more recent modeling approach is based
+  on representing state transitions as a Gaussian process (GP). In this paper,
+  we present a general technique for system identification that combines these
+  two modeling approaches into a single formulation. This is done by training a
+  Gaussian process on the residual between the non-linear model and ground
+  truth training data. The result is a GP-enhanced model that provides an
+  estimate of uncertainty in addition to giving better state predictions than
+  either ODE or GP alone. We show how the GP-enhanced model can be used in
+  conjunction with reinforcement learning to generate a blimp controller that
+  is superior to those learned with ODE or GP models alone.</p>
+
+
+
+</p>
+
+<p id="kocijan-murray-smith-etal-04">
+J.&nbsp;Kocijan, R.&nbsp;Murray-Smith, C.&nbsp;E. Rasmussen, and A.&nbsp;Girard.
+<a href="http://www.kyb.mpg.de/publications/pdfs/pdf2363.pdf"><b>Gasussian
+  process model based predictive control</b></a>.
+In <em>Proceedings of the Amarican Control Conference</em>, pages 2214-2219,
+  2004.<p class="c"><b> Abstract:</b> Gaussian process models provide a
+  probabilistic non-parametric modelling approach for black-box identi cation
+  of non-linear dynamic systems. The Gaussian processes can highlight areas of
+  the input space where prediction quality is poor, due to the lack of data or
+  its complexity, by indicating the higher variance around the predicted mean.
+  Gaussian process models contain noticeably less coef cients to be optimised.
+  This paper illustrates possible application of Gaussian process models within
+  model-based predictive control. The extra information provided within
+  Gaussian process model is used in predictive control, where optimisation of
+  control signal takes the variance information into account. The predictive
+  control principle is demonstrated on control of pH process benchmark.</p>
+
+
+
+</p>
+
+<p id="laslett-94">
+G.&nbsp;M. Laslett.
+<b>Kriging and splines: An empirical comparison of their predictive performance
+  in some applications</b>.
+<em>Journal of the American Statistical Association</em>, 89(426):391-409,
+  1994.
+
+
+
+</p>
+
+<p id="murillo-fuentes-etal-06">
+J.&nbsp;J. Murillo-Fuentes, S.&nbsp;Caro, and F.&nbsp;Perez-Cruz.
+<a href="http://books.nips.cc/papers/files/nips18/NIPS2005_0664.pdf"><b>Gaussian
+  processes for multiuser detection in cdma receivers</b></a>.
+In Y.&nbsp;Weiss, B.&nbsp;Sch&ouml;lkopf, and J.&nbsp;Platt, editors, <em>Advances in Neural
+  Information Processing Systems 18</em>, pages 939-946. The MIT Press,
+  Cambridge, MA, 2006.
+
+
+
+</p>
+
+<p id="ohagan-kennedy-oakley-99">
+A.&nbsp;O'Hagan, M.&nbsp;C. Kennedy, and J.&nbsp;E. Oakley.
+<b>Uncertainty analysis and other inference tools for complex computer
+  codes</b>.
+In J.&nbsp;M. Bernardo, J.&nbsp;O. Berger, A.&nbsp;P. Dawid, and A.&nbsp;F.&nbsp;M. Smith, editors,
+  <em>Bayesian Statistics 6</em>, pages 503-524. Oxford University Press,
+  1999.
+(with discussion).
+
+
+
+</p>
+
+<p id="platt-burges-etal-02">
+J.&nbsp;C. Platt, C.&nbsp;J.&nbsp;C. Burges, S.&nbsp;Swenson, C.&nbsp;Weare, and A.&nbsp;Zheng.
+<a href="http://books.nips.cc/papers/files/nips14/AP03.pdf"><b>Learning a
+  Gaussian process prior for automatically generating music
+  playlists</b></a>.
+In S.&nbsp;A. Solla, T.&nbsp;K. Leen, and K.-R. M&uuml;ller, editors, <em>Advances in
+  Neural Information Processing Systems 12</em>, Cambridge, MA, 2000. The MIT
+  Press.<p class="c"><b> Abstract:</b> This paper presents AutoDJ: a system for
+  automatically generating music playlists based on one or more seed songs
+  selected by a user. AutoDJ uses Gaussian Process Regression to learn a user
+  preference function over songs. This function takes music metadata as inputs.
+  This paper further introduces Kernel Meta-Training, which is a method of
+  learning a Gaussian Process kernel from a distribution of functions that
+  generates the learned function. For playlist generation, AutoDJ learns a
+  kernel from a large set of albums. This learned kernel is shown to be more
+  effective at predicting users' playlists than a reasonable hand-designed
+  kernel.</p>
+
+
+
+</p>
+
+<p id="quinonero-candela-girard-etal-03">
+J.&nbsp;Qui&ntilde;onero-Candela, A.&nbsp;Girard, Jan Larsen, and C.&nbsp;E. Rasmussen.
+<b>Propagation of uncertainty in Bayesian kernel models - application to
+  multiple-step ahead forecasting</b>.
+In <em>Proceedings of the 2003 IEEE Conference on Acoustics, Speech, and Signal
+  Processing (ICASSP 03)</em>, 2003.<p class="c"><b> Abstract:</b> The object
+  of Bayesian modelling is the predictive distribution, which in a forecasting
+  scenario enables improved estimates of forecasted values and their
+  uncertainties. In this paper we focus on reliably estimating the predictive
+  mean and variance of forecasted values using Bayesian kernel based models
+  such as the Gaussian Process and the Relevance Vector Machine. We derive
+  novel analytic expressions for the predictive mean and variance for Gaussian
+  kernel shapes under the assumption of a Gaussian input distribution in the
+  static case, and of a recursive Gaussian predictive density in iterative
+  forecasting. The capability of the method is demonstrated for forecasting of
+  time-series and compared to approximate methods.</p>
+
+
+
+</p>
+
+<p id="sacks-welch-etal-89">
+J.&nbsp;Sacks, W.&nbsp;J. Welch, T.&nbsp;J. Mitchell, and H.&nbsp;P. Wynn.
+<b>Design and analysis of computer experiments</b>.
+<em>Statistical Science</em>, 4(4):409-435, 1989.
+
+
+
+</p>
+
+<p id="schwaighofer-grigorias-etal-04">
+A.&nbsp;Schwaighofer, M.&nbsp;Grigoras, V.&nbsp;Tresp, and C&nbsp;Hoffmann.
+<a href="http://books.nips.cc/papers/files/nips16/NIPS2003_AP02.pdf"><b>GPPS:
+  A Gaussian process positioning system for cellular networks</b></a>.
+In S.&nbsp;Thrun, L.&nbsp;Saul, and B.&nbsp;Sch&ouml;lkopf, editors, <em>Advances in Neural
+  Information Processing Systems 16</em>, Cambridge, MA, 2004. The MIT
+  Press.<p class="c"><b> Abstract:</b> In this article, we present a novel
+  approach to solving the localization problem in cellular networks. The goal
+  is to estimate a mobile users position, based on measurements of the signal
+  strengths received from network base stations. Our solution works by building
+  Gaussian process models for the distribution of signal strengths, as obtained
+  in a series of calibration measurements. In the localization stage, the users
+  position can be estimated by maximizing the likelihood of received signal
+  strengths with respect to the position. We investigate the accuracy of the
+  proposed approach on data obtained within a large indoor cellular
+  network.</p>
+
+
+
+</p>
+
+<p id="shi-murray-smith-titterington-07">
+Jian&nbsp;Qing Shi, B.&nbsp;Wang, Roderick Murray-Smith, and D.&nbsp;M. Titterington.
+<a href="http://www.staff.ncl.ac.uk/j.q.shi/ps/gpfda.pdf"><b>Gaussian process
+  functional regression modeling for batch data</b></a>.
+<em>Biometrics</em>, 63:714-723, 2007.<p class="c"><b> Abstract:</b> A
+  Gaussian process functional regression model is proposed for the analysis of
+  batch data. Covariance structure and mean structure are considered
+  simultaneously, with the covariance structure modelled by a Gaussian process
+  regression model and the mean structure modelled by a functional regression
+  model. The model allows the inclusion of covariates in both the covariance
+  structure and the mean structure. It models the nonlinear relationship
+  between a functional output variable and a set of functional and
+  non-functional covariates. Several applications and simulation studies are
+  reported and show that the method provides very good results for curve
+  fitting and prediction.</p>
+
+
+
+</p>
+
+<p id="shi-wang-08">
+Jian&nbsp;Qing Shi and B.&nbsp;Wang.
+<a href="http://www.staff.ncl.ac.uk/j.q.shi/ps/mix-gpfr.pdf"><b>Curve
+  prediction and clustering with mixtures of Gaussian process functional
+  regression models</b></a>.
+<em>Statistics and Computing</em>, 18:267-283, 2008.<p class="c"><b>
+  Abstract:</b> <a href="#shi-murray-smith-titterington-07">Shi et al.
+  (2007)</a> proposed a Gaussian process functional regression (GPFR) model to
+  model functional response curves with a set of functional covariates. Two
+  main problems are addressed by this method: modelling nonlinear and
+  nonparametric regression relationship and modelling covariance structure and
+  mean structure simultaneously. The method gives very good results for curve
+  fitting and prediction but side-steps the problem of heterogeneity. In this
+  paper we present a new method for modelling functional data with
+  ‘spatially’ indexed data, i.e., the heterogeneity is dependent on factors
+  such as region and individual patient’s information. For data collected
+  from different sources, we assume that the data corresponding to each curve
+  (or batch) follows a Gaussian process func- tional regression model as a
+  lower-level model, and introduce an allocation model for the latent indicator
+  variables as a higher-level model. This higher-level model is dependent on
+  the information related to each batch. This method takes ad- vantage of both
+  GPFR and mixture models and therefore improves the accuracy of predictions.
+  The mixture model has also been used for curve clustering, but focusing on
+  the problem of clustering functional relationships between response curve and
+  covariates. The model is examined on simulated data and real data.</p>
+
+
+
+</p>
+
+<p id="sinz-quinonero-candela-etal-04">
+F.&nbsp;Sinz, J.&nbsp;Qui&ntilde;onero-Candela, G.&nbsp;H. Bakir, C.&nbsp;E. Rasmussen, and M.&nbsp;O.
+  Franz.
+<a href="http://www.kyb.mpg.de/publications/pdfs/pdf2644.pdf"><b>Learning depth
+  from stereo</b></a>.
+In C.&nbsp;E. Rasmussen, H.&nbsp;H. Buelthoff, M.&nbsp;A. Giese, and B.&nbsp;Sch&ouml;lkopf,
+  editors, <em>Pattern Recognition, Proc. 26th DAGM Symposium</em>, LNCS 3175,
+  pages 245-252. Springer, Berlin, 2004.<p class="c"><b> Abstract:</b> We
+  compare two approaches to the problem of estimating the depth of a point in
+  space from observing its image position in two different cameras: 1. The
+  classical photogrammetric approach explicitly models the two cameras and
+  estimates their intrinsic and extrinsic parameters using a tedious
+  calibration procedure; 2. A generic machine learning approach where the
+  mapping from image to spatial coordinates is directly approximated by a
+  Gaussian Process regression. Our results show that the generic learning
+  approach, in addition to simplifying the procedure of calibration, can lead
+  to higher depth accuracies than classical calibration although no specific
+  domain knowledge is used.</p>
+
+
+
+</p>
+
+<p id="welch-buck-etal-92">
+W.&nbsp;J. Welch, R.&nbsp;J. Buck, J.&nbsp;Sacks, H.&nbsp;P. Wynn, T.&nbsp;J. Mitchell, and M.&nbsp;D.
+  Morris.
+<b>Screening, predicting, and computer experiments</b>.
+<em>Technometrics</em>, 34:15-25, 1992.
+
+<p class="c"><b> Comment:</b> Application of noise free Gaussian Process to
+  screening (input selection) and prediction in computer experiments. The
+  covariance function is $C(x, x'|&theta;, p)\propto\exp
+  (-&theta;_j|x_j-x_j'|^p_j)$; variable selection is done by lumping some
+  hyperparameters and letting others vary freely. Training by maximum
+  likelihood using linesearches and the simplex algorithm.</p>
+
+</p>
 
 <br>
 
@@ -579,10 +3505,466 @@ of infinitely many training examples.
 This section contains a very diverse collection of other uses of inference
 in Gaussian processes, which don't fit well in any of the above categories.
 
-<!--#include file="ref-other.html" -->
+<p id="adams-stegle-08">
+R.&nbsp;P. Adams and O.&nbsp;Stegle.
+<a href="http://www.inference.phy.cam.ac.uk/rpa23/papers/adams-stegle-2008a.pdf"><b>Gaussian
+  process product models for nonparametric nonstationarity</b></a>.
+In <em>25th International Conference on Machine Learning</em>, 2008.<p
+  class="c"><b> Abstract:</b> Stationarity is often an unrealistic prior
+  assumption for Gaussian process regression. One solution is to predefine an
+  explicit nonstationary covariance function, but such covariance functions can
+  be difficult to specify and require detailed prior knowledge of the
+  nonstationarity. We propose the Gaussian process product model (GPPM) which
+  models data as the pointwise product of two latent Gaussian processes to
+  nonparametrically infer nonstationary variations of amplitude. This approach
+  differs from other nonparametric approaches to covariance function inference
+  in that it operates on the outputs rather than the inputs, resulting in a
+  significant reduction in computational cost and required data for inference.
+  We present an approximate inference scheme using Expectation Propagation.
+  This variational approximation yields convenient GP hyperparameter selection
+  and compact approximate predictive distributions.</p>
+
+
+
+</p>
+
+<p id="chu-ghahramani-05">
+W.&nbsp;Chu and Z.&nbsp;Ghahramani.
+<a href="http://www.jmlr.org/papers/volume6/chu05a/chu05a.pdf"><b>Gaussian
+  processes for ordinal regression</b></a>.
+<em>Journal of Machine Learning Research</em>, 6:1019-1041, 2005.<p
+  class="c"><b> Abstract:</b> We present a probabilistic kernel approach to
+  ordinal regression based on Gaussian processes. A threshold model that
+  generalizes the probit function is used as the likelihood function for
+  ordinal variables. Two inference techniques, based on the Laplace
+  approximation and the expectation propagation algorithm respectively, are
+  derived for hyperparameter learning and model selection. We compare these two
+  Gaussian process approaches with a previous ordinal regression method based
+  on support vector machines on some benchmark and real-world data sets,
+  including applications of ordinal regression to collaborative filtering and
+  gene expression analysis. Experimental results on these data sets verify the
+  usefulness of our approach.</p>
+
+
+
+</p>
+
+<p id="chu-ghahramani-05b">
+W.&nbsp;Chu and Z.&nbsp;Ghahramani.
+<a href="http://www.gatsby.ucl.ac.uk/~zoubin/papers/icml05chuwei-pl.pdf"><b>Preference
+  learning with Gaussian processe</b></a>.
+In <em>22nd International Conference on Machine Learning</em>, 2005.<p
+  class="c"><b> Abstract:</b> In this paper, we propose a probabilistic kernel
+  approach to preference learning based on Gaussian processes. A new likelihood
+  function is proposed to capture the preference relations in the Bayesian
+  framework. The generalized formulation is also applicable to tackle many
+  multiclass problems. The overall approach has the advantages of Bayesian
+  methods for model selection and probabilistic prediction. Experimental
+  results compared against the constraint classification approach on several
+  benchmark datasets verify the usefulness of this algorithm.</p>
+
+
+
+</p>
+
+<p id="der-lee-06">
+R.&nbsp;Der and D.&nbsp;Lee.
+<a href="http://books.nips.cc/papers/files/nips18/NIPS2005_0605.pdf"><b>Beyond
+  Gaussian processes: On the distributions of infinite networks</b></a>.
+In Y.&nbsp;Weiss, B.&nbsp;Sch&ouml;lkopf, and J.&nbsp;Platt, editors, <em>Advances in Neural
+  Information Processing Systems 18</em>, pages 275-282. The MIT Press,
+  Cambridge, MA, 2006.<p class="c"><b> Abstract:</b> A general analysis of the
+  limiting distribution of neural network functions is performed, with emphasis
+  on non-Gaussian limits. We show that with i.i.d. symmetric stable output
+  weights, and more generally with weights distributed from the normal domain
+  of attraction of a stable variable, that the neural functions converge in
+  distribution to stable processes. Conditions are also investigated under
+  which Gaussian limits do occur when the weights are independent but not
+  identically distributed. Some particularly tractable classes of stable
+  distributions are examined, and the possibility of learning with such
+  processes.</p>
+
+
+
+</p>
+
+<p id="friedman-nachman-00">
+N.&nbsp;Friedman and I.&nbsp;Nachman.
+<a href="https://eprints.kfupm.edu.sa/42431/1/42431.pdf"><b>Gaussian process
+  networks</b></a>.
+In <em>Proceedings of the Sixteenth Conference on Uncertainty in Artificial
+  Intelligence (UAI</em>, pages 211-219. Morgan Kaufmann, 2000.<p
+  class="c"><b> Abstract:</b> In this paper we address the problem of learning
+  the structure of a Bayesian network in domains with continuous variables.
+  This task requires a procedure for comparing different candidate structures.
+  In the Bayesian framework, this is done by evaluating the marginal likelihood
+  of the data given a candidate structure. This term can be computed in
+  closed-form for standard parametric families (e.g., Gaussians), and can be
+  approximated, at some computational cost, for some semi-parametric families
+  (e.g., mixtures of Gaussians) We present a new family of continuous variable
+  probabilistic networks that are based on Gaussian Process priors. These
+  priors are semiparametric in nature and can learn almost arbitrary noisy
+  functional relations. Using these priors, we can directly compute marginal
+  likelihoods for structure learning. The resulting method can discover a wide
+  range of functional dependencies in multivariate data. We develop the
+  Bayesian score of Gaussian Process Networks and describe how to learn them
+  from data. We present empirical results on artificial data as well as on
+  real-life domains with non-linear dependencies.</p>
+
+
+
+</p>
+
+<p id="girard-rasmussen-etal-03">
+A.&nbsp;Girard, C.&nbsp;Rasmussen, J.Qui&ntilde;onero-Candela, and R.&nbsp;Murray-Smith.
+<a href="http://books.nips.cc/papers/files/nips15/AA06.pdf"><b>Multiple-step
+  ahead prediction for non linear dynamic systems - a Gaussian process
+  treatment wih propagation of the uncertainty</b></a>.
+In S.&nbsp;Becker, S.&nbsp;Thrun, and K.&nbsp;Obermayer, editors, <em>Advances in Neural
+  Information Processing Systems 15</em>, Cambridge, MA, 2003. The MIT
+  Press.<p class="c"><b> Abstract:</b> We consider the problem of multi-step
+  ahead prediction in time series analysis using the non-parametric Gaussian
+  process model. k-step ahead forecasting of a discrete-time non-linear dynamic
+  system can be performed by doing repeated one-step ahead predictions. For a
+  state-space model of the form y_t = f(y_t-1,...,y_t-L), the prediction of
+  y at time t + k is based on the point estimates of the previous outputs. In
+  this paper, we show how, using an analytical Gaussian approximation, we can
+  formally incorporate the uncertainty about intermediate regressor values,
+  thus updating the uncertainty on the current prediction</p>
+
+
+
+</p>
+
+<p id="graepel-03">
+T.&nbsp;Graepel.
+<a href="http://www.research.microsoft.com/~thoreg/papers/graepel03.pdf"><b>Solving
+  noisy linear operator equations by Gaussian processes: Application to
+  ordinary and partial differential equations</b></a>.
+In <em>20th International Conference on Machine Learning</em>, 2003.<p
+  class="c"><b> Abstract:</b> We formulate the problem of solving stochastic
+  linear operator equations in a Bayesian Gaussian process (GP) framework. The
+  solution is obtained in the spirit of a collocation method based on noisy
+  evaluations of the target function at randomly drawn or deliberately chosen
+  points. Prior knowledge about the solution is encoded in terms of the
+  covariance kernel of the GP. As in GP regression, analytical expressions for
+  the mean and variance of the estimated target function are obtained from
+  which the solution to the operator equation follows by a manipulation of the
+  kernel. Linear initial and boundary value constraints can be enforced by
+  embedding the non-parametric model in a form that automatically satisfies the
+  boundary conditions. The method is illustrated on a noisy linear first-order
+  ordinary differential equation with initial condition and on a noisy
+  second-order partial differential equation with Dirichlet boundary
+  conditions.</p>
+
+
+
+</p>
+
+<p id="jackson-davy-doucet-fitzgerald-07">
+E.&nbsp;Jackson, M.&nbsp;Davy, A.&nbsp;Doucet, and W.&nbsp;Fitzgerald.
+<a href="http://www-lagis.univ-lille1.fr/~davy/papers/Jackson_ICASSP_2007.pdf"><b>Bayesian
+  unsupervised signal classification by Dirichlet process mixtures of
+  Gaussian processes</b></a>.
+In <em>International Conference on Acoustics, Speech and Signal Processing
+  2008</em>, volume&nbsp;3, pages 1077-1080, Honolulu, USA, 2007. IEEE.
+<a href="http://www-lagis.univ-lille1.fr/~davy/code/dpmgp.tar.gz">matlab
+  code</a>.<p class="c"><b> Abstract:</b> This paper presents a Bayesian
+  technique aimed at classifying signals without prior training (clustering).
+  The approach consists of modelling the observed signals, known only through a
+  finite set of samples corrupted by noise, as Gaussian processes. As in many
+  other Bayesian clustering approaches, the clusters are defined thanks to a
+  mixture model. In order to estimate the number of clusters, we assume a
+  priori a countably infinite number of clusters, thanks to a Dirichlet process
+  model over the Gaussian processes parameters. Computations are performed
+  thanks to a dedicated Monte Carlo Markov Chain algorithm, and results
+  involving real signals (mRNA expression profiles) are presented.</p>
+
+
+
+</p>
+
+<p id="ko-fox-08">
+J.&nbsp;Ko and D.&nbsp;Fox.
+<a href="http://www.cs.washington.edu/homes/fox/postscripts/gp-bayesfilter-iros-08.pdf"><b>GP-BayesFilters:
+  Bayesian Filtering Using Gaussian Process Prediction and Observation
+  Models</b></a>.
+In <em>Proceedings of the 2008 IEEE/RSJ International Conference on Intelligent
+  Robots and Systems (IROS)</em>, pages 3471-3476, Nice, France, September
+  2008.<p class="c"><b> Abstract:</b> Bayesian filtering is a general framework
+  for recursively estimating the state of a dynamical system. The most common
+  instantiations of Bayes filters are Kalman filters (extended and unscented)
+  and particle filters. Key components of each Bayes filter are probabilistic
+  prediction and observation models. Recently, Gaussian processes have been
+  introduced as a non-parametric technique for learning such models from
+  training data. In the context of unscented Kalman filters, these models have
+  been shown to provide estimates that can be superior to those achieved with
+  standard, parametric models. In this paper we show how Gaussian process
+  models can be integrated into other Bayes filters, namely particle filters
+  and extended Kalman filters. We provide a complexity analysis of these
+  filters and evaluate the alternative techniques using data collected with an
+  autonomous micro-blimp.</p>
+
+
+
+</p>
+
+<p id="ko-klein-fox-etal-07">
+J.&nbsp;Ko, D.&nbsp;J. Klein, D.&nbsp;Fox, and D.&nbsp;Haehnel.
+<a href="http://www.cs.washington.edu/homes/fox/postscripts/gp-ukf-iros-07.pdf"><b>GP-UKF:
+  Unscented Kalman Filters with Gaussian Process Prediction and Observation
+  Models</b></a>.
+In <em>Proceedings of the 2007 IEEE/RSJ International Conference on Intelligent
+  Robots and Systems</em>, pages 1901-1907, San Diego, CA, USA, October
+  2007.<p class="c"><b> Abstract:</b> This paper considers the use of
+  non-parametric system models for sequential state estimation. In particular,
+  motion and observation models are learned from training examples using
+  Gaussian Process (GP) regression. The state estimator is an Unscented Kalman
+  Filter (UKF). The resulting GP-UKF algorithm has a number of advantages over
+  standard (parametric) UKFs. These include the ability to estimate the state
+  of arbitrary nonlinear systems, improved tracking quality compared to a
+  parametric UKF, and graceful degradation with increased model uncertainty.
+  These advantages stem from the fact that GPs consider both the noise in the
+  system and the uncertainty in the model. If an approximate parametric model
+  is available, it can be incorporated into the GP; resulting in further
+  performance improvements. In experiments, we show how the GP-UKF algorithm
+  can be applied to the problem of tracking an autonomous micro-blimp.</p>
+
+
+
+</p>
+
+<p id="krause-singh-guestrin-08">
+A.&nbsp;Krause, A.&nbsp;Singh, and Guestrin C.
+<a href="http://www.jmlr.org/papers/volume9/krause08a/krause08a.pdf"><b>Near-Optimal
+  Sensor Placements in Gaussian Processes: Theory, Efficient Algorithms and
+  Empirical Studies</b></a>.
+<em>Journal of Machine Learning Research</em>, 9:235-284, February 2008.<p
+  class="c"><b> Abstract:</b> When monitoring spatial phenomena, which can
+  often be modeled as Gaussian processes (GPs), choosing sensor locations is a
+  fundamental task. There are several common strategies to address this task,
+  for example, geometry or disk models, placing sensors at the points of
+  highest entropy (variance) in the GP model, and A-, D-, or E-optimal design.
+  In this paper, we tackle the combinatorial optimization problem of maximizing
+  the mutual information between the chosen locations and the locations which
+  are not selected. We prove that the problem of finding the configuration that
+  maximizes mutual information is NP-complete. To address this issue, we
+  describe a polynomial-time approximation that is within (1-1/e) of the
+  optimum by exploiting the submodularity of mutual information. We also show
+  how submodularity can be used to obtain online bounds, and design branch and
+  bound search procedures. We then extend our algorithm to exploit lazy
+  evaluations and local structure in the GP, yielding significant speedups. We
+  also extend our approach to find placements which are robust against node
+  failures and uncertainties in the model. These extensions are again
+  associated with rigorous theoretical approximation guarantees, exploiting the
+  submodularity of the objective function. We demonstrate the advantages of our
+  approach towards optimizing mutual information in a very extensive empirical
+  study on two real-world data sets.</p>
+
+
+
+</p>
+
+<p id="murray-smith-girard-01">
+R.&nbsp;Murray-Smith and A.&nbsp;Girard.
+<a href="http://www.dcs.gla.ac.uk/~rod/publications/MurGir01.pdf"><b>Gaussian
+  process priors with ARMA noise models</b></a>.
+In <em>Irish Signals and Systems Conference</em>, pages 147-153, Maynooth,
+  2001.
+
+
+
+</p>
+
+<p id="ohagan-91">
+A.&nbsp;O'Hagan.
+<b>Bayes-Hermite quadrature</b>.
+<em>Journal of Statistical Planning and Inference</em>, 29:245-260, 1991.
+
+
+
+</p>
+
+<p id="rasmussen-03">
+C.&nbsp;E. Rasmussen.
+<a href="http://www.kyb.mpg.de/publications/pdfs/pdf2080.pdf"><b>Gaussian
+  processes to speed up hybrid Monte Carlo for expensive Bayesian
+  integrals</b></a>.
+In J.&nbsp;M. Bernardo, M.&nbsp;J. Bayarri, J.&nbsp;O. Berger, A.&nbsp;P. Dawid, D.&nbsp;Heckerman,
+  A.&nbsp;F.&nbsp;M. Smith, and M.&nbsp;West, editors, <em>Bayesian Statistics 7</em>, pages
+  651-659. Oxford University Press, 2003.<p class="c"><b> Abstract:</b> Hybrid
+  Monte Carlo (HMC) is often the method of choice for computing Bayesian
+  integrals that are not analytically tractable. However the success of this
+  method may require a very large number of evaluations of the (un-normalized)
+  posterior and its partial derivatives. In situations where the posterior is
+  computationally costly to evaluate, this may lead to an unacceptable
+  computational load for HMC. I propose to use a Gaussian Process model of the
+  (log of the) posterior for most of the computations required by HMC. Within
+  this scheme only occasional evaluation of the actual posterior is required to
+  guarantee that the samples generated have exactly the desired distribution,
+  even if the GP model is somewhat inaccurate. The method is demonstrated on a
+  10 dimensional problem, where 200 evaluations suffice for the generation of
+  100 roughly independent points from the posterior. Thus, the proposed scheme
+  allows Bayesian treatment of models with posteriors that are computationally
+  demanding, such as models involving computer simulation.</p>
+
+
+
+</p>
+
+<p id="rasmussen-ghahramani-02">
+C.&nbsp;E. Rasmussen and Z.&nbsp;Ghahramani.
+<a href="http://books.nips.cc/papers/files/nips14/AA06.pdf"><b>Infinite
+  mixtures of Gaussian process experts</b></a>.
+In T.&nbsp;G. Diettrich, S.&nbsp;Becker, and Z.&nbsp;Ghahramani, editors, <em>Advances in
+  Neural Information Processing Systems 14</em>. The MIT Press, 2002.<p
+  class="c"><b> Abstract:</b> We present an extension to the Mixture of Experts
+  (ME) model, where the individual experts are Gaussian Process (GP) regression
+  models. Using a input-dependent adaptation of the Dirichlet Process, we
+  implement a gating network for an infinite number of Experts. Inference in
+  this model may be done efficiently using a Markov Chain relying on Gibbs
+  sampling. The model allows the effective covariance function to vary with the
+  inputs, and may handle large datasets - thus potentially overcoming two of
+  the biggest hurdles with GP models. Simulations show the viability of this
+  approach.</p>
+
+
+
+</p>
+
+<p id="rasmussen-ghahramani-03">
+C.&nbsp;E. Rasmussen and Z.&nbsp;Ghahramani.
+<a href="http://books.nips.cc/papers/files/nips15/AA01.pdf"><b>Bayesian Monte
+  Carlo</b></a>.
+In S.&nbsp;Becker, S.&nbsp;Thrun, and K.&nbsp;Obermayer, editors, <em>Advances in Neural
+  Information Processing Systems 15</em>, Cambridge, MA, 2003. The MIT
+  Press.<p class="c"><b> Abstract:</b> We investigate Bayesian alternatives to
+  classical Monte Carlo methods for evaluating integrals. Bayesian Monte Carlo
+  (BMC) allows the incorporation of prior knowledge, such as smoothness of the
+  integrand, into the estimation. In a simple problem we show that this
+  outperforms any classical importance sampling method. We also attempt more
+  challenging multidimensional integrals involved in computing marginal
+  likelihoods of statistical models (a.k.a. partition functions and model
+  evidences). We find that Bayesian Monte Carlo outperformed Annealed
+  Importance Sampling, although for very high dimensional problems or problems
+  with massive multimodality BMC may be less adequate. One advantage of the
+  Bayesian approach to Monte Carlo is that samples can be drawn from any
+  distribution. This allows for the possibility of active design of sample
+  points so as to maximise information gain.</p>
+
+
+
+</p>
+
+<p id="seeger-06">
+M.&nbsp;Seeger.
+<a href="http://www.kyb.mpg.de/bs/people/seeger/papers/gpbp.pdf"><b>Predicting
+  Structured Data</b></a>, chapter Gaussian Process Belief Propagation, pages
+  301-318.
+The MIT Press, 2006.<p class="c"><b> Abstract:</b> The framework of graphical
+  models is a cornerstone of applied Statistics, allowing for an intuitive
+  graphical specification of the main features of a model, and providing a
+  basis for general Bayesian inference computations though belief propagation
+  (BP). In the latter, messages are passed between marginal beliefs of groups
+  of variables. In parametric models, where all variables are of fixed finite
+  dimension, these beliefs and messages can be represented easily in tables or
+  parameters of exponential families, and BP techniques are widely used in this
+  case. In this paper, we are interested in nonparametric models, where belief
+  representations do not have a finite dimension, but grow with the dataset
+  size. In the presence of several dependent domain variables, each of which is
+  represented as a nonparametric random field, we aim for a synthesis of BP and
+  nonparametric approximate inference techniques. We highlight the difficulties
+  in exercising this venture and suggest possible techniques for remedies. We
+  demonstrate our program using the example of semiparametric latent factor
+  models [15], which can be used to model conditional dependencies between
+  multiple responses.</p>
+
+
+
+</p>
+
+<p id="solak-murray-smith-etal-02">
+E.&nbsp;Solak, R.&nbsp;Murray-Smith, W.&nbsp;E. Leithead, D.&nbsp;Leith, and C.&nbsp;E. Rasmussen.
+<a href="http://books.nips.cc/papers/files/nips15/AA70.pdf"><b>Derivative
+  observations in Gaussian process models of dynamic systems</b></a>.
+In S.&nbsp;Thrun Becker, S. and K.&nbsp;Obermayer, editors, <em>Advances in Neural
+  Information Processing Systems 15</em>, pages 1033-1040. The MIT Press,
+  2003.<p class="c"><b> Abstract:</b> Gaussian processes provide an approach to
+  nonparametric modelling which allows a straightforward combination of
+  function and derivative observations in an empirical model. This is of
+  particular importance in identification of nonlinear dynamic systems from
+  experimental data. 1) It allows us to combine derivative information, and
+  associated uncertainty with normal function observations into the learning
+  and inference process. This derivative information can be in the form of
+  priors specified by an expert or identified from perturbation data close to
+  equilibrium. 2) It allows a seamless fusion of multiple local linear models
+  in a consistent manner, inferring consistent models and ensuring that
+  integrability constraints are met. 3) It improves dramatically the
+  computational efficiency of Gaussian process models for dynamic system
+  identification, by summarising large quantities of near-equilibrium data by a
+  handful of linearisations, reducing the training set size - traditionally a
+  problem for Gaussian process models.</p>
+
+
+
+</p>
+
+<p id="suykens-etal-02">
+J.&nbsp;A.&nbsp;K. Suykens, T.&nbsp;Van Gentel, J.&nbsp;De Brabanter, B.&nbsp;De Moor, and
+  J.&nbsp;Vandewalle.
+<a href="http://www.esat.kuleuven.ac.be/sista/lssvmlab/book.html"><b>Least
+  Squares Support Vector Machines</b></a>.
+World Scientific Pub. Co., Singapore, 2002.
+
+<p class="c"><b> Comment:</b> This (curriously named) book is essentially about
+  Gaussian process models, although the connection is mentioned only in passing
+  (eg in sec 3.6.3). Regression is done with a Gaussian process and
+  classification is achieved by regressing on the labels
+  ("least-squares-classification" or "label-regression") using a Gaussian
+  process. The failure of viewing the model as a GP leads to a non-standard
+  treatment of the probabilistic aspects: eg lack of simple standard predictive
+  variance for regression (see eq 4.69) and a treament of probabilistic
+  classification involving modelling the density of inputs in feature space,
+  see sec 4.1.3.</p>
+
+</p>
+
+<p id="williams-felderhof-01">
+C.&nbsp;K.&nbsp;I. Williams and S.&nbsp;N. Felderhof.
+<b>Products and sums of tree-structured Gaussian processes</b>.
+In <em>Proceedings of the Fourth International ICSC Symposium on Soft
+  Computing</em>. ICSC-NAISO Academic Press, 2001.
+
+
+
+</p>
 
 <hr>
 
-<!--#include file="ref-end.html" -->
+<table width="100%"><tr><td>
+This page is maintained by <a href="http://mlg.eng.cam.ac.uk/carl">Carl
+Edward Rasmussen</a> and not kept up to date.<br>
+Please send suggestions for corrections or additions via email.</td>
+<td align="right">
+<a href="http://t.extreme-dm.com/?login=gaussian"
+target="_top"><img src="http://t1.extreme-dm.com/i.gif"
+name="EXim" border="0" height="38" width="41"
+alt="eXTReMe Tracker"></img></a>
+<script type="text/javascript" language="javascript1.2"><!--
+EXs=screen;EXw=EXs.width;navigator.appName!="Netscape"?
+EXb=EXs.colorDepth:EXb=EXs.pixelDepth;//-->
+</script><script type="text/javascript"><!--
+var EXlogin='gaussian' // Login
+var EXvsrv='s9' // VServer
+navigator.javaEnabled()==1?EXjv="y":EXjv="n";
+EXd=document;EXw?"":EXw="na";EXb?"":EXb="na";
+EXd.write("<img src=http://e0.extreme-dm.com",
+"/"+EXvsrv+".g?login="+EXlogin+"&amp;",
+"jv="+EXjv+"&amp;j=y&amp;srw="+EXw+"&amp;srb="+EXb+"&amp;",
+"l="+escape(EXd.referrer)+" height=1 width=1>");//-->
+</script><noscript><img height="1" width="1" alt=""
+src="http://e0.extreme-dm.com/s9.g?login=gaussian&amp;j=n&amp;jv=n"/>
+</noscript>
+</td></tr></table>
 
 </body></html>
