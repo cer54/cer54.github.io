@@ -1,1 +1,478 @@
+<html>
+<head>
+<title>The Gaussian Processes Web Site</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<link rel="shortcut icon" href="http://www.gaussianprocess.org/gp.ico"
+type="image/x-icon">
 
+<style type="text/css">
+body {font-family: Verdana,Arial,Helvetica,sans-serif; font-size: 16px}
+p.c {margin-left: 1cm; margin-right: 1cm; text-align: justify; font-size: 13px}
+p.s {font-size: 13px}
+</style>
+</head>
+
+<body>
+
+<h1>The Gaussian Processes Web Site</h1>
+
+<p align="justify">This web site aims to provide an overview of resources
+concerned with probabilistic modeling, inference and learning based on Gaussian
+processes.  Although Gaussian processes have a long history in the field of
+statistics, they seem to have been employed extensively only in niche
+areas. With the advent of kernel machines in the machine learning community,
+models based on Gaussian processes have become commonplace for problems of
+regression (kriging) and classification as well as a host of more specialized
+applications.</p>
+
+<p>
+<table border="0" cellpadding="3" width="100%">
+<tbody><tr><td align="center">
+ [ <a href="#books">Books</a>
+ | <a href="#events">Events</a>
+ | <a href="#related">Other Web Sites</a>
+ | <a href="#code">Software</a>
+ | <a href="#references">Research Papers</a>
+ ]
+</td></tr></tbody></table>
+
+<br><h2><a name="books">Books</a></h2>
+
+<p><a href="http://www.gaussianprocess.org/gpml">Gaussian Processes for Machine Learning</a>, Carl Edward
+Rasmussen and Chris Williams, the MIT Press, 2006, <a href="http://www.gaussianprocess.org/gpml/chapters">online version</a>.</p>
+
+<p><a href="http://www.springer.com/sgw/cda/frontpage/0,11855,4-10129-22-2012471-0,00.html">Statistical
+Interpolation of Spatial Data: Some Theory for Kriging</a>, Michael L. Stein,
+Springer, 1999.</p>
+
+<p><a href="http://www.wiley.com/WileyCDA/WileyTitle/productCd-0471002550.html">Statistics
+for Spatial Data</a> (revised edition), Noel A. C. Cressie, Wiley, 1993</p>
+
+<p><a href="http://www.ec-securehost.com/SIAM/CB59.html">Spline Models for
+Observational Data</a>, Grace Wahba, SIAM, 1990</p>
+
+
+<br><h2><a name="events">Future and Past Events</a></h2>
+
+<p>The <a href="http://intranet.cs.man.ac.uk/ai/bark08">Bayesian Research
+Kitchen</a> at The Wordsworth Hotel, Grasmere, Ambleside, Lake
+District, United Kingdom 05 - 07 September 2008.</p>
+
+<br>
+
+<p>A <a href="http://www.nips.cc/Conferences/2006/Program/#Tutorials">tutorial</a>
+entitled <a
+href="http://www.nips.cc/Conferences/2006/Program/event.php?ID=4">Advances in
+Gaussian Processes</a> on Dec. 4th at <a href="http://www.nips.cc">NIPS</a> <a
+href="http://www.nips.cc/Conference/2006">2006</a> in VanCouver, <a href="http://www.kyb.mpg.de/~carl/gpnt06.pdf">slides</a>, <a href="http://nips.cc/Conferences/2006/Media">lecture</a>.</p>
+
+<p>The <a href="http://www.dcs.shef.ac.uk/ml/gpip">Gaussian Processes in
+Practice</a> workshop at Bletchley Park, U.K., June 12-13 2006.</p>
+
+<p>The <a href="http://gp.kyb.tue.mpg.de/">Open Problems in Gaussian Processes
+for Machine Learning</a> workshop at nips*05 in Whistler, December 10th,
+2005.</p>
+
+<p><a>The </a><a href="http://www.dcs.shef.ac.uk/ml/gprt">Gaussian Process
+Round Table</a> meeting in Sheffield, June 9-10, 2005.</p>
+
+
+<br><h2><a name="related">Other Web Sites of Related Interest</a></h2>
+
+<p>The <a href="http://www.kernel-machines.org/">kernel-machines</a> web
+site.</p>
+
+<p>Wikipedia <a href="http://en.wikipedia.org/wiki/Gaussian_process">entry</a>
+on Gaussian processes.</p>
+
+<p>The <a href="http://www.ai-geostats.org/">ai-geostats</a> web site for 
+spatial statistics and geostatistics.</p>
+
+<p>The <a href="http://dsc.ijs.si/jus.kocijan/GPdyn">Bibliography of Gaussian 
+Process Models in Dynamic Systems Modelling</a> web site maintained by <a href="http://dsc.ijs.si/en/people/jus_kocijan">Juš Kocijan</a>.</p>
+
+<br><h2><a name="code">Software</a></h2>
+
+<p><a href="http://www.rainsoft.de">Andreas Geiger</a> has written a
+simple <a
+href="http://www.rainsoft.de/projects/gausspro.html">Gaussian process
+regression Java applet</a>, illustrating the behaviour of covariance functions
+and hyperparameters.</p>
+
+<table border="0" cellpadding="1"><tbody><tr><td bgcolor="#000000">
+<table border="0" cellpadding="3" cellspacing="1">
+<tbody><tr><td align="center" bgcolor="white"><b>package</b></td>
+<td align="center" bgcolor="white"><b>title</b></td>
+<td align="center" bgcolor="white"><b>author</b></td>
+<td align="center" bgcolor="white"><b>implementation</b></td>
+<td align="center" bgcolor="white"><b>description</b></td></tr>
+
+<tr><td bgcolor="white"><a href="http://ida.first.fraunhofer.de/%7Eanton/software.html">bcm</a></td>
+<td bgcolor="white">The Bayesian Committee Machine</td>
+<td bgcolor="white"><a href="http://ida.first.fraunhofer.de/%7Eanton">Anton Schwaighofer</a></td>
+<td bgcolor="white">matlab and <a href="http://www.ncrg.aston.ac.uk/netlab/index.php">NETLAB</a></td>
+<td bgcolor="white"><p class="s">An extension of the Netlab implementation for GP regression. It allows large
+scale regression based on the BCM approximation, see also <a href="#schwaighofer-tresp-03">
+the accompanying paper</a>
+</p></td>
+</tr>
+
+<tr><td bgcolor="white"><a href="http://www.cs.toronto.edu/%7Eradford/fbm.software.html">fbm</a></td>
+<td bgcolor="white">Software for Flexible Bayesian Modeling</td>
+<td bgcolor="white"><a href="http://www.cs.toronto.edu/%7Eradford">Radford M. Neal</a></td>
+<td bgcolor="white">C for linux/unix</td>
+<td align="justify" bgcolor="white"><p class="s">An extensive and well documented package implementing Markov chain Monte Carlo methods for
+Bayesian inference in neural networks, Gaussian processes (regression, binary
+and multi-class classification), mixture models and Dirichlet Diffusion trees.</p></td>
+</tr>
+
+<tr><td bgcolor="white"><a href="http://www.dcs.shef.ac.uk/%7Eneil/gplvm">gp-lvm</a> and <a href="http://www.dcs.shef.ac.uk/~neil/fgplvm">fgp-lvm</a></td>
+<td bgcolor="white">A (fast) implementation of <a href="#lawrence-04">Gaussian Process Latent Variable Models</a></td>
+<td bgcolor="white"><a href="http://www.dcs.shef.ac.uk/%7Eneil">Neil D. Lawrence</a></td>
+<td bgcolor="white">matlab and C</td><td bgcolor="white">&nbsp;</td>
+</tr>
+
+<tr><td bgcolor="white"><a href="http://www.GaussianProcess.org/gpml/code/matlab">gpml</a></td>
+<td bgcolor="white">Code from the Rasmussen and Williams: <a href="http://www.GaussianProcess.org/gpml">Gaussian Processes for Machine Learning</a> book.</td>
+<td bgcolor="white"><a href="http://learning.eng.cam.ac.uk/carl">Carl Edward Rasmussen</a> and <a href="http://www.kyb.mpg.de/~hn">Hannes Nickisch</a></td>
+<td bgcolor="white">matlab and octave</td>
+<td bgcolor="white"><p class="s">
+The GPML toolbox implements approximate inference algorithms for
+Gaussian processes such as Expectation Propagation, the Laplace
+Approximation and Variational Bayes for a wide class of likelihood
+functions for both regression and classification. It comes with a big
+algebra of covariance and mean functions allowing for flexible modeling.
+The code is fully compatible to Octave 3.2.x. <a
+  href="http://jmlr.csail.mit.edu/papers/volume11/rasmussen10a/rasmussen10a.pdf">JMLR
+  paper</a> describing the toolbox.</p></td>
+</tr>
+
+<tr><td bgcolor="white"><a href="http://www.dcs.shef.ac.uk/~neil/ivmcpp/">c++-ivm</a></td>
+<td bgcolor="white">Sparse approximations based on the <a href="#lawrence-seeger-herbrich-03">Informative Vector Machine</a></td>
+<td bgcolor="white"><a href="http://www.dcs.shef.ac.uk/%7Eneil">Neil D. Lawrence</a></td>
+<td bgcolor="white">C++</td><td bgcolor="white"><p class="s">IVM Software in C++ , also includes the null category noise model for <a href="#lawrence-jordan-05">semi-supervised learning</a>.</p></td>
+</tr>
+
+<tr><td bgcolor="white"><a href="http://www.dcs.shef.ac.uk/~neil/bfd/">BFD</a></td>
+<td bgcolor="white">Bayesian Fisher's Discriminant software</td>
+<td bgcolor="white"><a href="http://www.dcs.shef.ac.uk/~tpena/">Tonatiuh Peña
+Centeno</a></td>
+<td bgcolor="white">matlab</td>
+<td align="justify" bgcolor="white"><p class="s">Implements a Gaussian process
+interpretation of Kernel Fisher's discriminant.</p></td>
+</tr>
+
+<tr><td bgcolor="white"><a href="http://www.gatsby.ucl.ac.uk/%7chuwei/ordinalregression.html">gpor</a></td>
+<td bgcolor="white">Gaussian Processes for Ordinal Regression</td>
+<td bgcolor="white"><a href="http://www.gatsby.ucl.ac.uk/%7Echuwei">Wei Chu</a></td>
+<td bgcolor="white">C for linux/unix</td>
+<td align="justify" bgcolor="white"><p class="s">Software implementation of <a href="#chu-ghahramani-05">Gaussian Processes for Ordinal Regression</a>. Provides Laplace Approximation, Expectation Propagation and Variational Lower Bound.</p></td>
+</tr>
+
+<tr><td bgcolor="white"><a href="http://www.lce.hut.fi/research/compinf/mcmcstuff">MCMCstuff</a></td>
+<td bgcolor="white">MCMC Methods for MLP and GP and Stuff</td>
+<td bgcolor="white"><a href="http://www.lce.hut.fi/~ave">Aki Vehtari</a></td>
+<td bgcolor="white">matlab and C</td>
+<td bgcolor="white"><p class="s">A collection of matlab functions for Bayesian
+inference with Markov chain Monte Carlo (MCMC) methods. The purpose of this
+toolbox was to port some of the features in <a href="http://www.cs.toronto.edu/~radford/fbm.software.htm">fbm</a> to matlab for easier development for matlab users.</p></td></tr>
+
+<tr><td bgcolor="white"><a href="http://www.kyb.tue.mpg.de/bs/people/csatol/ogp">ogp</a></td>
+<td bgcolor="white">Sparse Online Gaussian Processes</td>
+<td bgcolor="white"><a href="http://www.cs.ubbcluj.ro/~csatol">Lehel Csató</a></td>
+<td bgcolor="white">matlab and <a href="http://www.ncrg.aston.ac.uk/netlab/index.php">NETLAB</a></td>
+<td align="justify" bgcolor="white"><p class="s"> Approximate online learning in sparse Gaussian process models for regression (including
+several non-Gaussian likelihood functions) and classification.</p></td>
+</tr>
+
+<tr><td bgcolor="white"><a href="http://cs.brown.edu/people/dang/code.shtml">sogp</a></td>
+<td bgcolor="white">Sparse Online Gaussian Process C++ Library</td>
+<td bgcolor="white"><a href="http://cs.brown.edu/~dang">Dan Grollman</a></td>
+<td bgcolor="white">C++</td>
+<td align="justify" bgcolor="white"><p class="s">
+Sparse online Gaussian process C++ library based on the <a href="#csato-02">PhD thesis</a> of <a href="http://www.cs.ubbcluj.ro/~csatol">Lehel Csató</a></p></td>
+</tr>
+
+<tr><td bgcolor="white">spgp <a href="http://www.gatsby.ucl.ac.uk/~snelson/SPGP_dist.tgz">.tgz</a> or <a href="http://www.gatsby.ucl.ac.uk/~snelson/SPGP_dist.zip">.zip</a></td>
+<td bgcolor="white">Sparse Pseudo-input Gaussian Processes</td>
+<td bgcolor="white"><a href="http://research.microsoft.com/~esnelson">Ed Snelson</a></td>
+<td bgcolor="white">matlab</td>
+<td align="justify" bgcolor="white"><p class="s">Implements sparse GP regression as described in <a href="#snelson-ghahramani-06">Sparse Gaussian Processes using Pseudo-inputs</a> and <a href="#snelson-07">Flexible and efficient Gaussian process models for machine learning</a>. The SPGP uses gradient-based marginal likelihood optimization to find suitable basis points and kernel hyperparameters in a single joint optimization.</p></td>
+</tr>
+
+<tr><td bgcolor="white"><a href="http://www.ams.ucsc.edu/~rbgramacy/tgp.php">tgp</a></td>
+<td bgcolor="white">Treed Gaussian Processes</td>
+<td bgcolor="white"><a href="http://www.ams.ucsc.edu/~rbgramacy">Robert B. Gramacy</a></td>
+<td bgcolor="white">C/C++ for R</td>
+<td align="justify" bgcolor="white"><p class="s">Bayesian Nonparametric and
+nonstationary regression by treed Gaussian processes with jumps to the limiting
+linear model (LLM). Special cases also implememted include Bayesian linear
+models, linear CART, stationary separable and isotropic Gaussian process
+regression. Includes 1-d and 2-d plotting functions (with higher dimension
+projection and slice capabilities), and tree drawing, designed for
+visualization of tgp class output. See also <a href="#gramacy-07">Gramacy 2007</a></p></td>
+</tr>
+
+<tr><td bgcolor="white"><a href="http://wol.ra.phy.cam.ac.uk/mng10/GP/GP.html">Tpros</a></td>
+<td bgcolor="white">Gaussian Process Regression</td>
+<td bgcolor="white"><a href="http://www.inference.phy.cam.ac.uk/mackay/">David MacKay</a> and Mark Gibbs</td>
+<td bgcolor="white">C</td>
+<td align="justify" bgcolor="white"><p class="s"> Tpros is the Gaussian Process program written by Mark Gibbs and David
+MacKay.</p></td>
+</tr>
+
+<tr><td bgcolor="white"><a href="http://www.inference.phy.cam.ac.uk/mackay/itprnn/code/gp/Welcome.html">GP Demo</a></td>
+<td bgcolor="white">Octave demonstration of Gaussian process interpolation</td>
+<td bgcolor="white"><a href="http://www.inference.phy.cam.ac.uk/mackay/">David MacKay</a></td>
+<td bgcolor="white">octave</td>
+<td align="justify" bgcolor="white"><p class="s"> This DEMO works fine with octave-2.0 and did not work with 2.1.33.</p></td>
+</tr>
+
+<tr><td bgcolor="white"><a href="http://www.dai.ed.ac.uk/homes/ckiw/code/gpclass.tar.gz">GPClass</a></td>
+<td bgcolor="white">Matlab code for Gaussian Process Classification</td>
+<td bgcolor="white">
+<a href="http://www.idiap.ch/~barber/">David Barber</a> and
+<a href="http://www.dai.ed.ac.uk/homes/ckiw/">C. K. I. Williams</a> 
+</td>
+<td bgcolor="white">matlab</td>
+<td align="justify" bgcolor="white"><p class="s">Implements Laplace's approximation as described in <a href="#williams-barber-98">Bayesian Classification with Gaussian Processes</a> for binary and multiclass classification.</p></td></tr>
+
+<tr><td bgcolor="white"><a href="http://www.dcs.gla.ac.uk/people/personal/girolami/pubs_2005/VBGP">VBGP</a></td>
+<td bgcolor="white">Variational Bayesian Multinomial Probit Regression with Gaussian Process Priors</td>
+<td bgcolor="white">
+<a href="http://www.dcs.gla.ac.uk/~girolami">Mark Girolami</a> and
+<a href="http://www.dcs.gla.ac.uk/~srogers">Simon Rogers</a> 
+</td>
+<td bgcolor="white">matlab</td>
+<td align="justify" bgcolor="white"><p class="s">Implements a variational
+approximation for Gaussian Process based multiclass classification as
+described in the <a href="#girolami-rogers-06">paper</a> Variational Bayesian Multinomial Probit Regression. </td></tr>
+
+<tr><td bgcolor="white"><a href="http://www-ai.cs.uni-dortmund.de/weblab/static/api_docs/pyGPs">pyGPs</a></td>
+<td bgcolor="white">Gaussian Processes for Regression and Classification</td>
+<td bgcolor="white">
+<a href="http://www-kd.iai.uni-bonn.de/index.php?page=people_details&id=33">Marion Neumann</a> 
+</td>
+<td bgcolor="white">Python</td>
+<td align="justify" bgcolor="white"><p class="s">pyGPs is a library containing an object-oriented python implementation for Gaussian Process (GP) regression and classification. <a href="https://github.com/marionmari/pyGPs">github</a></td></tr>
+
+<tr><td bgcolor="white"><a href="http://code.google.com/p/gaussian-process">gaussian-process</a></td>
+<td bgcolor="white">Gaussian process regression</td>
+<td bgcolor="white">
+<a href="http://www.ams.ucsc.edu/~anand">Anand Patil</a> 
+</td>
+<td bgcolor="white">Python</td>
+<td align="justify" bgcolor="white"><p class="s">under development</td></tr>
+
+<tr><td bgcolor="white"><a href="http://cran.r-project.org/web/packages/gptk">gptk</a></td>
+<td bgcolor="white">Gaussian Process Tool-Kit</td>
+<td bgcolor="white">
+<a href="http://staffwww.dcs.shef.ac.uk/people/A.Kalaitzis">Alfredo Kalaitzis</a> 
+</td>
+<td bgcolor="white">R</td>
+<td align="justify" bgcolor="white"><p class="s">The gptk package implements a general-purpose toolkit for Gaussian process regression with an RBF covariance function. Based on a MATLAB implementation written by Neil D. Lawrence.</td></tr>
+
+</tbody></table></td></tr>
+</tbody>
+</table>
+
+<p>
+Other software that way be useful for implementing Gaussian process models:
+<ul>
+<li>
+    The <a
+    href="http://www.ncrg.aston.ac.uk/netlab/index.php">NETLAB</a>
+    package by <a
+    href="http://www.ncrg.aston.ac.uk/People/nabneyit/Welcome.html">Ian
+    Nabney</a> includes code for Gaussian process regression and many
+    other useful thing, e.g. optimisers.
+</li>
+<li>
+    See <a href="http://research.microsoft.com/~minka">Tom Minka</a>'s
+    page on <a
+    href="http://research.microsoft.com/~minka/software/matlab.html">accelerating
+    matlab</a> and his <a
+    href="http://research.microsoft.com/~minka/software/lightspeed">lightspeed</a>
+    toolbox.
+</li>
+<li>
+    <a
+    href="http://www.kyb.tuebingen.mpg.de/bs/people/seeger">Matthias
+    Seeger</a> shares his <a
+    href="http://www.kyb.tuebingen.mpg.de/bs/people/seeger/software.html">code</a>
+    for Kernel Multiple Logistic Regression, Incomplete Cholesky
+    Factorization and Low-rank Updates of Cholesky Factorizations.
+</li>
+<li>
+    See the software section of <a
+    href="http://www.kernel-machines.org/">www.kernel-machines.org</a>.
+</ul>
+
+
+
+<br><h2><a name="references">Annotated Bibliography</a></h2>
+
+<p>Below is a collection of papers relevant to learning in Gaussian process
+models. The papers are ordered according to topic, with occational papers
+occuring under multiple headings.
+
+<p>
+<table border="0" cellpadding="3" width="100%">
+<tbody><tr><td align="center">
+ [ <a href="#tut">Tutorials</a>
+ | <a href="#gpr">Regression</a>
+ | <a href="#class">Classification</a>
+ | <a href="#cov">Covariance Functions</a>
+ | <a href="#select">Model Selection</a>
+ | <a href="#approx">Approximations</a>
+ | <a href="#rkhs">Stats</a>
+ | <a href="#cons">Learning Curves</a>
+ | <a href="#rkhs">RKHS</a>
+ | <a href="#rl">Reinforcement Learning</a>
+ | <a href="#gplvm">GP-LVM</a>
+ | <a href="#appl">Applications</a>
+ | <a href="#other">Other Topics</a>
+ ]
+</td></tr></tbody></table>
+
+
+<br>
+
+<h3 id="tut">Tutorials</h3>
+
+Several papers provide tutorial material suitable for a first introduction to
+learning in Gaussian process models. These range from very short [<a
+href="#williams-02">Williams 2002</a>] over intermediate [<a
+href="#mackay-98">MacKay 1998</a>], [<a href="#williams-99">Williams 1999</a>]
+to the more elaborate [<a href="#rasmussen-williams-06">Rasmussen and Williams
+2006</a>]. All of these require only a minimum of prerequisites in the form of
+elementary probability theory and linear algebra.
+
+<!--#include file="ref-tut.html" -->
+
+<br>
+
+<h3 id="gpr">Regression</h3>
+
+The simplest uses of Gaussian process models are for (the conjugate case of)
+regression with Gaussian noise. See the <a href="#approx">approximation</a>
+section for papers which deal specifically with sparse or fast approximation
+techniques. <a href="#ohagan-78">O'Hagan 1978</a> represents an early reference
+from the statistics comunity for the use of a Gaussian process as a prior over
+functions, an idea which was only introduced to the machine learning community
+by <a href="#williams-rasmussen-96">Williams and Rasmussen 1996</a>.
+
+<!--#include file="ref-gpr.html" -->
+
+<br>
+
+<h3 id="class">Classification</h3>
+
+Exact inference in Gaussian process models for classification is not tractable.
+Several approximation schemes have been suggested, including Laplace's method,
+variational approximations, mean field methods, Markov chain Monte Carlo and
+Expectation Propagation. See also the <a href="#approx">approximation</a>
+section. Multi-class classification may be treated explicitly, or decomposed
+into multiple, binary (one against the rest) problems. For introductions, see
+for example <a href="#williams-barber-98">Williams and Barber 1998</a> or <a
+href="#kuss-rasmussen-05">Kuss and Rasmussen 2005</a>. Bounds from the
+PAC-Bayesian perspective are applied in <a href="#seeger-02">Seeger 2002</a>.
+
+<!--#include file="ref-class.html" -->
+
+<br>
+
+<h3 id="cov">Covariance Functions and Properties of Gaussian Processes</h3>
+
+The properties of Gaussian processes are controlled by the (mean function and)
+covariance function. Some references here describe difference covariance
+functions, while others give mathematical characterizations, see eg. <a
+href="#abrahamsen-97">Abrahamsen 1997</a> for a review. Some references
+describe non-standard covariance functions leading to non-stationarity etc.
+
+<!--#include file="ref-cov.html" -->
+
+<br>
+
+<h3 id="select">Model Selection</h3>
+
+<!--#include file="ref-select.html" -->
+
+<br>
+
+<h3 id="approx">Approximations</h3>
+
+There are two main reasons for doing approximations in Gaussian process models.
+Either because of analytical intractability such as arrises in classification
+and regression with non-Gaussian noise. Or in order to gain a computational
+advantage when using large datasets, by the use of <em>sparse</em>
+approximations. Some methods address both issues simultaneously. The
+approximation methods and approximate inference algorithms are quite diverse,
+see <a href="#quinonero-candela-rasmussen-05">Qui&ntilde;onero-Candela and
+Ramussen 2005</a> for a unifying framework for sparse approximations in the
+Gaussian regression model.
+
+<!--#include file="ref-approx.html" -->
+
+<br>
+
+<h3 id="stats">References from the Statistics Community</h3>
+
+Gaussian processes have a long history in the statistics community. They have
+been particularly well developed in geostatistics under the name of
+<em>kriging</em>. The papers have been grouped because they are written using a
+common terminology, and have slightly different focus from typical machine
+learning papers,
+
+<!--#include file="ref-stats.html" -->
+
+<br>
+
+<h3 id="cons">Consistency, Learning Curves and Bounds</h3>
+
+The papers in this section give theoretical results on <em>learning
+curves</em>, which describe the expected generalization performance as a
+function of the number of training cases. Consistency addresses the question
+whether the solution approaches the true data generating process in the limit
+of infinitely many training examples.
+
+<!--#include file="ref-cons.html" -->
+
+<br>
+
+<h3 id="rkhs">Reproducing Kernel Hilbert Spaces</h3>
+
+<!--#include file="ref-rkhs.html" -->
+
+<br>
+
+<h3 id="rl">Reinforcement Learning</h3>
+
+<!--#include file="ref-rl.html" -->
+
+<br>
+
+<h3 id="gplvm">Gaussian Process Latent Variable Models (GP-LVM)</h3>
+
+<!--#include file="ref-gplvm.html" -->
+
+<br>
+
+<h3 id="appl">Applications</h3>
+
+<!--#include file="ref-appl.html" -->
+
+<br>
+
+<h3 id="other">Other Topics</h3>
+
+This section contains a very diverse collection of other uses of inference
+in Gaussian processes, which don't fit well in any of the above categories.
+
+<!--#include file="ref-other.html" -->
+
+<hr>
+
+<!--#include file="ref-end.html" -->
+
+</body></html>
