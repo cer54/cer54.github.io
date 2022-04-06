@@ -12,6 +12,6 @@ The [ancient](ancient) Gaussian Process page.
 
 - [gpml](gpml/code) matlab toolbox
 - [GPflow](http://gpflow.org) python/tensorflow package
-- [GPyTorch](http://gpythorch.ai) GPs in pytorch
+- [GPyTorch](http://gpytorch.ai) GPs in pytorch
 
 [Interactive Visualisation of Gaussian processes](http://www.infinitecuriosity.org/vizgp)
