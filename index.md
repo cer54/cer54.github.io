@@ -16,5 +16,7 @@ Springer, 1999, [online](https://link.springer.com/content/pdf/10.1007/978-1-461
 - [gpml](gpml/code) matlab toolbox
 - [GPflow](http://gpflow.org) python/tensorflow package
 - [GPyTorch](http://gpytorch.ai) GPs in pytorch
+- process oriented GPs: Stheno in
+  [julia](https://github.com/JuliaGaussianProcesses/Stheno.jl) and [python](https://github.com/wesselb/stheno)
 
 [Interactive Visualisation of Gaussian processes](http://www.infinitecuriosity.org/vizgp)
